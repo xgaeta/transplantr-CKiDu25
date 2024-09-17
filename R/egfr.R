@@ -271,3 +271,122 @@ ibw = function(height, sex) {
   height = height / 100
   height ^ 2 * bmivar
 }
+
+
+#' Creatinine based eGFR by CKiD U25 equation (US units)
+#'
+#' Reference: Pierce CB, Muñoz A, Ng DK, Warady BA, Furth SL, Schwartz GJ.
+#' Age- and sex-dependent clinical equations to estimate glomerular filtration
+#' rates in children and young adults with chronic kidney disease. Kidney
+#' International. 2021;99(4):948–956. doi:10.1016/j.kint.2020.10.047
+#'
+#' @param creat numeric vector of creatinine levels in mg/dl
+#' @param age numeric vector of ages in years
+#' @param sex character vector of sex ("F" = female, "M" = male)
+#' @param height numeric vector of heights in cm
+#'
+#' @return numeric vector of eGFR in ml/min/1.73m²
+#' @export
+#'
+#' @examples
+#' CKiD_U25_creatinine_US(creat = 1, age = 12, sex = "F", height = 132)
+CKiD_U25_creatinine_US = function(creat, age, sex, height){
+
+  if ( (min(age)<1) | (max(age)>25)) cat("\nWarning: there are age values <1 or >25 years; for those children, eGFR values might be invalid\n")
+
+  coeff <- if(age < 12){
+    if(sex == "F") 36.1 * 1.008 ^ (age - 12)
+    else 39 * 1.008 ^ (age - 12)
+  } else if (age < 18) {
+    if(sex == "F") 36.1 * 1.023 ^ (age - 12)
+    else 39 * 1.045 ^ (age - 12)
+  } else {
+    if(sex == "F") 41.4
+    else 50.8
+  }
+
+  eGFR <- coeff * (height / 100) / creat
+  round(eGFR, 1)
+}
+
+#' Cystatin C based eGFR by CKiD U25 equation (US units)
+#'
+#' Reference: Pierce CB, Muñoz A, Ng DK, Warady BA, Furth SL, Schwartz GJ.
+#' Age- and sex-dependent clinical equations to estimate glomerular filtration
+#' rates in children and young adults with chronic kidney disease. Kidney
+#' International. 2021;99(4):948–956. doi:10.1016/j.kint.2020.10.047
+#'
+#' @param cystatin numeric vector of Cystatin C levels in mg/L
+#' @param age numeric vector of ages in years
+#' @param sex character vector of sex ("F" = female, "M" = male)
+#'
+#' @return numeric vector of eGFR in ml/min/1.73m²
+#' @export
+#'
+#' @examples
+#' CKiD_U25_cystatin_US(cystatin = 1, age = 18, sex = "F")
+CKiD_U25_cystatin_US = function(cystatin, age, sex){
+
+  if ( (min(age)<1) | (max(age)>25)) cat("\nWarning: there are age values <1 or >25 years; for those children, eGFR values might be invalid\n")
+
+  coeff <- if(age < 12){
+    if(sex == "F") 79.9*1.004 ^ (age - 12)
+    else 87.2 * 1.011 ^ (age - 15)
+  } else if(age < 15) {
+    if(sex == "F") 79.9 * 0.974 ^ (age - 12)
+    else 87.2 * 1.011 ^ (age-15)
+  } else if (age < 18) {
+    if(sex == "F") 79.9*0.974 ^ (age - 12)
+    else 87.2 * 0.960 ^ (age - 15)
+  } else {
+    if(sex == "F") 77.1
+    else 68.3
+  }
+
+  eGFR <- coeff / cystatin
+  round(eGFR, 1)
+}
+
+#' Cystatin C and serum Creatinine based eGFR by CKiD U25 equation (US units)
+#'
+#' Wrapper function for estimating pediatric GFR based on data from the CKiD
+#' study of children with CKD. Calculates a Cystatin C-based and Creatinine-
+#' based eGFR then averages them. This has been shown to more faithfully
+#' estimate measured GFR than either equation separately
+#'
+#' Reference: Pierce CB, Muñoz A, Ng DK, Warady BA, Furth SL, Schwartz GJ.
+#' Age- and sex-dependent clinical equations to estimate glomerular filtration
+#' rates in children and young adults with chronic kidney disease. Kidney
+#' International. 2021;99(4):948–956. doi:10.1016/j.kint.2020.10.047
+#'
+#' @param cystatin numeric vector of Cystatin C levels in mg/dl
+#' @param creat numeric vector of creatinine levels in mg/dl
+#' @param age numeric vector of ages in years
+#' @param sex character vector of sex ("F" = female, "M" = male)
+#' @param height numeric vector of heights in cm
+#' @param verbose a single boolean value. If true, return all the component
+#' parts of the eGFR (cystatin, cr, combined), if false (defult), only return
+#' the combined eGFR
+#'
+#' @return numeric vector of eGFR in ml/min/1.73m²
+#' @export
+#'
+#' @examples
+#' CKiD_U25_combined_US(cystatin = 1, creat = 0.7, age = 18, sex = "F",
+#'                      height = 132, verbose = FALSE)
+CKiD_U25_combined_US = function(cystatin, creat, age, sex, height,
+                                verbose = FALSE){
+
+  eGFRU25.cr <- CKiD_U25_creatinine_US(creat = creat, age = age,
+                                    height = height, sex = sex)
+  eGFRU25.cys <-  CKiD_U25_cystatin_US(cystatin = cystatin, age = age, sex = sex)
+  sGFRU25.avg <- (eGFRU25.cys + eGFRU25.cr) / 2
+
+  ## Determine if we should return all the component parts or just the result
+  ## of the combined calculation
+  if(verbose) {
+    return(round(cbind(eGFRU25.cr, eGFRU25.cys, sGFRU25.avg),1))
+  } else {
+    return(round(sGFRU25.avg, 1))
+  }
+}
