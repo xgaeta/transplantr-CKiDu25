@@ -58,13 +58,17 @@ CKiD_U25_combined_US(cystatin = 1.2, creat = 0.8, age = 9.5, sex = "F", height =
 
 As vectorised functions, the functions can be applied across a whole dataset fairly rapidly. I find that the easiest way to do this is using a "pipe" of functions from the *dplyr* package. *dplyr* can be installed on its own or, as I would recommend, by installing the whole *tidyverse* family of packages - a family which includes the legendary *ggplot2* graphing package.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 # install whole tidyverse
 install.packages("tidyverse")
 
 # install just dplyr
 install.packages("dplyr")
 ```
+```{r include=FALSE}
+library(dplyr)
+```
+
 
 Although recommended, *dplyr* is not necessary for most *transplantr* functions to work. *dplyr* is needed for the EPTS and KDPI functions, and additionally *stringr* is needed for the `hla_mm_level_str()` function and also for the `chi2dob()` function, one unlikely to be needed by anyone working outside Scotland!
 
@@ -80,10 +84,11 @@ Which is the best option to use? Calling the wrapper function uses fewer keystro
 
 Let's say you want to calculate MELD scores for a series of liver transplant candidates. OK, you probably actually want MELD-Na, but let's go with MELD as it has fewer variables! The data is in a dataframe or tibble called "oltx.assessments" and the relevant variables are Patient.INR, Patient.Bilirubin, Patient.Creatinine and Patient.Dialysed. To add a new Patient.MELD variable to the dataframe, you would use a *dplyr* pipe with the `mutate()` verb:
 
-```{r}
-oltx.assessments <- oltx.assessments %>%
+```{r eval=FALSE, include=TRUE}
+oltx.assessments <- oltx.assessments |> 
   mutate(Patient.MELD = meld(INR = Patient.INR, bili = Patient.Bilirubin,
         creat = Patient.Creatinine, dialysis = Patient.Dialysed, units = "SI"))
+
 ```
 
 The `units = "SI"` can be left out provided that creatinine and bilirubin are both in µmol/l. To switch to mg/dl, use `units = "US"` or call `meld_US()` instead.
@@ -92,7 +97,7 @@ The `units = "SI"` can be left out provided that creatinine and bilirubin are bo
 
 Although I think *dplyr* makes life much easier when organising data, I concede that some people prefer to use base R functions instead. Using a vectorised function with multiple vector inputs is not easy in base R but can be done with the `mapply()`, or more easily with the `pmap_dbl()` from the *purrr* package.
 
-```{r}
+```{r eval=FALSE, include=TRUE}
 # attach oltx.assessments to save a lot of typing!
 attach(oltx.assessments)
 
@@ -117,7 +122,7 @@ The advantage of using a *dplyr* pipe, apart from easier code, is speed. Benchma
 
 Although vectorised functions for multiple calculations are one of the best features of R, you might just want to collect data on a single case. This is very straightforward:
 
-```{r}
+```{r eval=FALSE, include=TRUE}
 # using µmol/l
 meld(INR = 2.1, bili = 34, creat = 201, dialysis = 0)
 

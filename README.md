@@ -1,4 +1,4 @@
-transplantr
+transplantr CKiD
 ================
 
 The *transplantr* package provides a set of vectorised functions for
@@ -47,15 +47,26 @@ library(transplantr)
 These new equations follow the same style as the rest of the package,
 including sex as a binary variable. Height is provided in cm. They
 currently use US based equations. Outputs are in
-mL/min/1.73m<sup>2</sup>.
+mL/min/1.73m<sup>2</sup>.t
 
 ``` r
 CKiD_U25_cystatin_US(cystatin = 1.2, age = 9.5, sex = "F")
+```
 
+    ## [1] 65.9
+
+``` r
 CKiD_U25_creatinine_US(creat = 0.8, age = 9.5, sex = "F", height = 132)
+```
 
+    ## [1] 58.4
+
+``` r
 CKiD_U25_combined_US(cystatin = 1.2, creat = 0.8, age = 9.5, sex = "F", height = 132, verbose = TRUE)
 ```
+
+    ##      eGFRU25.cr eGFRU25.cys eGFRU25.avg
+    ## [1,]       58.4        65.9        62.2
 
 [Pull requests have been
 filed](https://github.com/johnasher/transplantr/pull/5 "Current status of CKiD U25 pull request")
@@ -119,7 +130,7 @@ To add a new Patient.MELD variable to the dataframe, you would use a
 *dplyr* pipe with the `mutate()` verb:
 
 ``` r
-oltx.assessments <- oltx.assessments %>%
+oltx.assessments <- oltx.assessments |> 
   mutate(Patient.MELD = meld(INR = Patient.INR, bili = Patient.Bilirubin,
         creat = Patient.Creatinine, dialysis = Patient.Dialysed, units = "SI"))
 ```
