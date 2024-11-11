@@ -6,19 +6,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Liver transplant risk stratification • transplantr</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Liver transplant risk stratification">
-<meta property="og:description" content="">
-<meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
+
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,25 +32,19 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">transplantr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -73,9 +68,9 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/johnasher/transplantr">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
+  <a href="https://github.com/johnasher/transplantr/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
+
   </a>
 </li>
       </ul>
@@ -86,197 +81,321 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Liver transplant risk stratification</h1>
+      <h1 data-toc-skip>Liver transplant risk stratification</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/johnasher/transplantr/blob/master/vignettes/liver_recipient_scoring.Rmd"><code>vignettes/liver_recipient_scoring.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/johnasher/transplantr/blob/HEAD/vignettes/liver_recipient_scoring.Rmd" class="external-link"><code>vignettes/liver_recipient_scoring.Rmd</code></a></small>
       <div class="hidden name"><code>liver_recipient_scoring.Rmd</code></div>
 
     </div>
 
     
     
-<div id="introduction" class="section level1">
-<h1 class="hasAnchor">
-<a href="#introduction" class="anchor"></a>Introduction</h1>
-<div id="adult-risk-stratification" class="section level2">
-<h2 class="hasAnchor">
-<a href="#adult-risk-stratification" class="anchor"></a>Adult risk stratification</h2>
-<p>The <strong>MELD</strong> score was originally developed at the Mayo Clinic to risk stratify elective transhepatic porto-systemic shunt (TIPS) procedures in patients with liver cirrhosis(<em>1</em>). It has also been widely used as part of clinical urgency prioritisation in liver transplant matching algorithms, although UNOS changed to the alternative <strong>MELD-Na</strong> score(<em>2</em>), which incorporates serum sodium levels, in January 2016. The scores have been shown to predict short-term mortality after transhepatic porto-systemic shunt (TIPS) procedure, non-liver transplant surgery in cirrhotic patients, acute alcoholic hepatitis and acute variceal haemorrhage.</p>
-<p>The <strong>UKELD</strong> score was developed to risk stratify liver transplant recipients in the UK, is based on MELD and adds serum sodium(<em>3</em>).</p>
-<p>MELD and UKELD are primarily intended to predict waiting list mortality and therefore urgency for transplant, but perform relatively poorly at predicting survival after liver transplant(<em>4-6</em>). The <strong>SOFT</strong> (Survival Outcomes Following Liver Transplantation) Score was developed by at Columbia University to predict recipient survival after liver transplantation(<em>7</em>). Another score using a composite of donor and recipient characteristics is the <strong>BAR</strong> (Balance of Risk) score, which is based on a sample of American and European liver transplants and achieved a c-statistic of 0.7 when predicting patient survival(<em>8</em>).</p>
-<p>There are also two scores using donor characteristics to predict outcome, the <strong>DRI</strong> (Donor Risk Index) developed in the USA(<em>9</em>), and the derivative <strong>ET-DRI</strong> (Eurotransplant Donor Risk Index) adapted to the European donor population, which achieved a c-statistic of and 0.626 in the European population(<em>10</em>).</p>
+<div class="section level2">
+<h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<div class="section level3">
+<h3 id="adult-risk-stratification">Adult risk stratification<a class="anchor" aria-label="anchor" href="#adult-risk-stratification"></a>
+</h3>
+<p>The <strong>MELD</strong> score was originally developed at the Mayo
+Clinic to risk stratify elective transhepatic porto-systemic shunt
+(TIPS) procedures in patients with liver cirrhosis(<em>1</em>). It has
+also been widely used as part of clinical urgency prioritisation in
+liver transplant matching algorithms, although UNOS changed to the
+alternative <strong>MELD-Na</strong> score(<em>2</em>), which
+incorporates serum sodium levels, in January 2016. The scores have been
+shown to predict short-term mortality after transhepatic porto-systemic
+shunt (TIPS) procedure, non-liver transplant surgery in cirrhotic
+patients, acute alcoholic hepatitis and acute variceal haemorrhage.</p>
+<p>The <strong>UKELD</strong> score was developed to risk stratify liver
+transplant recipients in the UK, is based on MELD and adds serum
+sodium(<em>3</em>).</p>
+<p>MELD and UKELD are primarily intended to predict waiting list
+mortality and therefore urgency for transplant, but perform relatively
+poorly at predicting survival after liver transplant(<em>4-6</em>). The
+<strong>SOFT</strong> (Survival Outcomes Following Liver
+Transplantation) Score was developed by at Columbia University to
+predict recipient survival after liver transplantation(<em>7</em>).
+Another score using a composite of donor and recipient characteristics
+is the <strong>BAR</strong> (Balance of Risk) score, which is based on a
+sample of American and European liver transplants and achieved a
+c-statistic of 0.7 when predicting patient survival(<em>8</em>).</p>
+<p>There are also two scores using donor characteristics to predict
+outcome, the <strong>DRI</strong> (Donor Risk Index) developed in the
+USA(<em>9</em>), and the derivative <strong>ET-DRI</strong>
+(Eurotransplant Donor Risk Index) adapted to the European donor
+population, which achieved a c-statistic of and 0.626 in the European
+population(<em>10</em>).</p>
 </div>
-<div id="risk-stratification-in-children" class="section level2">
-<h2 class="hasAnchor">
-<a href="#risk-stratification-in-children" class="anchor"></a>Risk stratification in children</h2>
-<p>As the adult formulae do not work well at predicting outcomes in children, the <strong>PELD</strong> score was developed to predict waiting list mortality(<em>11</em>), and <strong>Pedi-SOFT</strong> to predict outcome after transplantation(<em>12</em>).</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(transplantr)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(dplyr)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co">#&gt; Attaching package: 'dplyr'</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="co">#&gt; The following objects are masked from 'package:stats':</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="co">#&gt;     filter, lag</span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="co">#&gt; The following objects are masked from 'package:base':</span></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="co">#&gt;     intersect, setdiff, setequal, union</span></a></code></pre></div>
+<div class="section level3">
+<h3 id="risk-stratification-in-children">Risk stratification in children<a class="anchor" aria-label="anchor" href="#risk-stratification-in-children"></a>
+</h3>
+<p>As the adult formulae do not work well at predicting outcomes in
+children, the <strong>PELD</strong> score was developed to predict
+waiting list mortality(<em>11</em>), and <strong>Pedi-SOFT</strong> to
+predict outcome after transplantation(<em>12</em>).</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://transplantr.txtools.net" class="external-link">transplantr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Attaching package: 'dplyr'</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:stats':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     filter, lag</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span></code></pre></div>
 </div>
 </div>
-<div id="meld-and-meld-na-scores" class="section level1">
-<h1 class="hasAnchor">
-<a href="#meld-and-meld-na-scores" class="anchor"></a>MELD and MELD-Na scores</h1>
-<p>The original MELD score uses serum creatinine, bilirubin and INR, but cannot be simply calculated as creatinine and bilirubin values are set to specific numbers when outside a set range. Creatinine &lt;1mg/dl is entered as 1, or &gt;4mg/dl as 4, and patients who are either on CVVH or have been dialysed twice in the week prior to the calculation are assigned a fixed value of 4mg/dl. Bilirubin levels less than 1mg/dl are also set to 1, as are INR values of less than 1. The final score ranges between 6 and 40.</p>
-<p><span class="math display">\[MELD = 10 \times (0.957 \times log_e creatinine \times 0.378 \times log_e~bilirubin + 1.120 \times  log_e INR + 0.643)\]</span></p>
-<p>To get the exact MELD score as recommended by UNOS, the part of the equation above in the brackets is rounded to the tenth decimal place before being multiplied by 10.</p>
-<p>The MELD-Na score adds serum sodium levels into the mix if the MELD score is greater than 11. The actual sodium level is only used if sodium is between 125 and 137 mmol/l. If the actual level is less than 125, the value 125 is used in the equation, and if more than 137, a fixed value of 137 is assigned.</p>
-<p><span class="math display">\[MELDNa = MELD + 1.32 \times (137 - Na) - [0.033 \times MELD \times (137 - Na)]\]</span></p>
-<p>The <code><a href="../reference/meld.html">meld()</a></code> function in <em>transplantr</em> calculates the MELD score with these value assignments taken into account. Creatinine and bilirubin are both calculated from their values in µmol/l by default, and can be changed to mg/dl either by setting the optional <code>units</code> parameter to <code>"US"</code> or by using the <code><a href="../reference/meld_US.html">meld_US()</a></code> wrapper function instead. It is a vectorised function and can therefore be applied to a whole series at once, for example in a <em>dplyr</em> pipe:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># load dataset</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="st">"liver.pts"</span>)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># remove redundant variables and calculate MELD</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">oltx_data =<span class="st"> </span>liver.pts <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(<span class="op">-</span>Patient.Age, <span class="op">-</span>Patient.Sodium) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="dt">MELD =</span> <span class="kw"><a href="../reference/meld.html">meld</a></span>(<span class="dt">INR =</span> Patient.INR, <span class="dt">bili =</span> Patient.Bilirubin, </a>
-<a class="sourceLine" id="cb2-8" data-line-number="8">                     <span class="dt">creat =</span> Patient.Creatinine, <span class="dt">dialysis =</span> Patient.Dialysed))</a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"></a>
-<a class="sourceLine" id="cb2-10" data-line-number="10"><span class="co"># display result</span></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11">oltx_data</a>
-<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="co">#&gt;   Patient.INR Patient.Bilirubin Patient.Creatinine Patient.Dialysed     MELD</span></a>
-<a class="sourceLine" id="cb2-13" data-line-number="13"><span class="co">#&gt; 1         1.4                22                120                0 14.07569</span></a>
-<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co">#&gt; 2         2.1                34                450                1 30.60446</span></a>
-<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="co">#&gt; 3         1.6                26                 77                0 13.27793</span></a>
-<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="co">#&gt; 4         4.9                51                228                0 37.42734</span></a></code></pre></div>
+<div class="section level2">
+<h2 id="meld-and-meld-na-scores">MELD and MELD-Na scores<a class="anchor" aria-label="anchor" href="#meld-and-meld-na-scores"></a>
+</h2>
+<p>The original MELD score uses serum creatinine, bilirubin and INR, but
+cannot be simply calculated as creatinine and bilirubin values are set
+to specific numbers when outside a set range. Creatinine &lt;1mg/dl is
+entered as 1, or &gt;4mg/dl as 4, and patients who are either on CVVH or
+have been dialysed twice in the week prior to the calculation are
+assigned a fixed value of 4mg/dl. Bilirubin levels less than 1mg/dl are
+also set to 1, as are INR values of less than 1. The final score ranges
+between 6 and 40.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>E</mi><mi>L</mi><mi>D</mi><mo>=</mo><mn>10</mn><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.957</mn><mo>×</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mi>e</mi></msub><mi>c</mi><mi>r</mi><mi>e</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>n</mi><mi>i</mi><mi>n</mi><mi>e</mi><mo>×</mo><mn>0.378</mn><mo>×</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mi>e</mi></msub><mspace width="0.222em"></mspace><mi>b</mi><mi>i</mi><mi>l</mi><mi>i</mi><mi>r</mi><mi>u</mi><mi>b</mi><mi>i</mi><mi>n</mi><mo>+</mo><mn>1.120</mn><mo>×</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mi>e</mi></msub><mi>I</mi><mi>N</mi><mi>R</mi><mo>+</mo><mn>0.643</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">MELD = 10 \times (0.957 \times log_e creatinine \times 0.378 \times log_e~bilirubin + 1.120 \times  log_e INR + 0.643)</annotation></semantics></math></p>
+<p>To get the exact MELD score as recommended by UNOS, the part of the
+equation above in the brackets is rounded to the tenth decimal place
+before being multiplied by 10.</p>
+<p>The MELD-Na score adds serum sodium levels into the mix if the MELD
+score is greater than 11. The actual sodium level is only used if sodium
+is between 125 and 137 mmol/l. If the actual level is less than 125, the
+value 125 is used in the equation, and if more than 137, a fixed value
+of 137 is assigned.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>E</mi><mi>L</mi><mi>D</mi><mi>N</mi><mi>a</mi><mo>=</mo><mi>M</mi><mi>E</mi><mi>L</mi><mi>D</mi><mo>+</mo><mn>1.32</mn><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>137</mn><mo>−</mo><mi>N</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>0.033</mn><mo>×</mo><mi>M</mi><mi>E</mi><mi>L</mi><mi>D</mi><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>137</mn><mo>−</mo><mi>N</mi><mi>a</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">MELDNa = MELD + 1.32 \times (137 - Na) - [0.033 \times MELD \times (137 - Na)]</annotation></semantics></math></p>
+<p>The <code><a href="../reference/meld.html">meld()</a></code> function in <em>transplantr</em> calculates
+the MELD score with these value assignments taken into account.
+Creatinine and bilirubin are both calculated from their values in µmol/l
+by default, and can be changed to mg/dl either by setting the optional
+<code>units</code> parameter to <code>"US"</code> or by using the
+<code><a href="../reference/meld_US.html">meld_US()</a></code> wrapper function instead. It is a vectorised
+function and can therefore be applied to a whole series at once, for
+example in a <em>dplyr</em> pipe:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># load dataset</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"liver.pts"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># remove redundant variables and calculate MELD</span></span>
+<span><span class="va">oltx_data</span> <span class="op">=</span> <span class="va">liver.pts</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">Patient.Age</span>, <span class="op">-</span><span class="va">Patient.Sodium</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>MELD <span class="op">=</span> <span class="fu"><a href="../reference/meld.html">meld</a></span><span class="op">(</span>INR <span class="op">=</span> <span class="va">Patient.INR</span>, bili <span class="op">=</span> <span class="va">Patient.Bilirubin</span>, </span>
+<span>                     creat <span class="op">=</span> <span class="va">Patient.Creatinine</span>, dialysis <span class="op">=</span> <span class="va">Patient.Dialysed</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># display result</span></span>
+<span><span class="va">oltx_data</span></span>
+<span><span class="co">#&gt;   Patient.INR Patient.Bilirubin Patient.Creatinine Patient.Dialysed     MELD</span></span>
+<span><span class="co">#&gt; 1         1.4                22                120                0 14.07569</span></span>
+<span><span class="co">#&gt; 2         2.1                34                450                1 30.60446</span></span>
+<span><span class="co">#&gt; 3         1.6                26                 77                0 13.27793</span></span>
+<span><span class="co">#&gt; 4         4.9                51                228                0 37.42734</span></span></code></pre></div>
 <p>It will also work to calculate MELD score for a single case:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="../reference/meld.html">meld</a></span>(<span class="dt">INR =</span> <span class="fl">2.0</span>, <span class="dt">bili =</span> <span class="fl">3.1</span>, <span class="dt">creat =</span> <span class="fl">1.9</span>, <span class="dt">dialysis =</span> <span class="dv">0</span>, <span class="dt">units =</span> <span class="st">"US"</span>)</a></code></pre></div>
-<p>The <code><a href="../reference/meld_na.html">meld_na()</a></code> function calculates the newer MELD-Na score using SI units for creatinine and bilirubin. Changing to US units can be done by setting <code>units</code> to <code>"US"</code> or using the <code><a href="../reference/meld_na_US.html">meld_na_US()</a></code> wrapper function. <code><a href="../reference/meld_na.html">meld_na()</a></code> is also a vectorised function and can be called from within a <em>dplyr</em> pipe or for single cases in the same way as the <code><a href="../reference/meld.html">meld()</a></code> function.</p>
-<p>It is worth noting that for liver allocation in the USA, additional points are added to the MELD score in the context of certain specified clinical conditions known as “standard MELD exceptions”. These increase the MELD score by 10% every 3 months from diagnosis. Guidance on MELD, MELD-Na and PELD in US liver matching is available at the <a href="https://optn.transplant.hrsa.gov">OPTN website</a>.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/meld.html">meld</a></span><span class="op">(</span>INR <span class="op">=</span> <span class="fl">2.0</span>, bili <span class="op">=</span> <span class="fl">3.1</span>, creat <span class="op">=</span> <span class="fl">1.9</span>, dialysis <span class="op">=</span> <span class="fl">0</span>, units <span class="op">=</span> <span class="st">"US"</span><span class="op">)</span></span></code></pre></div>
+<p>The <code><a href="../reference/meld_na.html">meld_na()</a></code> function calculates the newer MELD-Na
+score using SI units for creatinine and bilirubin. Changing to US units
+can be done by setting <code>units</code> to <code>"US"</code> or using
+the <code><a href="../reference/meld_na_US.html">meld_na_US()</a></code> wrapper function. <code><a href="../reference/meld_na.html">meld_na()</a></code>
+is also a vectorised function and can be called from within a
+<em>dplyr</em> pipe or for single cases in the same way as the
+<code><a href="../reference/meld.html">meld()</a></code> function.</p>
+<p>It is worth noting that for liver allocation in the USA, additional
+points are added to the MELD score in the context of certain specified
+clinical conditions known as “standard MELD exceptions”. These increase
+the MELD score by 10% every 3 months from diagnosis. Guidance on MELD,
+MELD-Na and PELD in US liver matching is available at the <a href="https://optn.transplant.hrsa.gov" class="external-link">OPTN website</a>.</p>
 </div>
-<div id="ukeld-score" class="section level1">
-<h1 class="hasAnchor">
-<a href="#ukeld-score" class="anchor"></a>UKELD score</h1>
-<p>The UKELD score was developed in the UK before the MELD-Na had been published, and includes the same variables as MELD-Na: creatinine, bilirubin, INR and sodium. Although it has not been used in liver matching in the UK, a UKELD score greater than 49 has been a criterion for eligibility to join the liver transplant waiting list.</p>
-<p>The score can be calculated with the <code><a href="../reference/ukeld.html">ukeld()</a></code> function, using µmol/l as the default unit for creatinine and bilirubin. This can be changed to mg/dl by setting the <code>units</code> parameter to <code>"US"</code> or calling the <code><a href="../reference/ukeld_US.html">ukeld_US()</a></code> wrapper function.</p>
+<div class="section level2">
+<h2 id="ukeld-score">UKELD score<a class="anchor" aria-label="anchor" href="#ukeld-score"></a>
+</h2>
+<p>The UKELD score was developed in the UK before the MELD-Na had been
+published, and includes the same variables as MELD-Na: creatinine,
+bilirubin, INR and sodium. Although it has not been used in liver
+matching in the UK, a UKELD score greater than 49 has been a criterion
+for eligibility to join the liver transplant waiting list.</p>
+<p>The score can be calculated with the <code><a href="../reference/ukeld.html">ukeld()</a></code> function,
+using µmol/l as the default unit for creatinine and bilirubin. This can
+be changed to mg/dl by setting the <code>units</code> parameter to
+<code>"US"</code> or calling the <code><a href="../reference/ukeld_US.html">ukeld_US()</a></code> wrapper
+function.</p>
 </div>
-<div id="soft-score" class="section level1">
-<h1 class="hasAnchor">
-<a href="#soft-score" class="anchor"></a>SOFT score</h1>
-<p>The SOFT score (<em>7</em>) aims to predict post-transplant survival in adult liver recipients using 19 risk factors. There is also a pre-procurement P-SOFT score which uses the 14 risk factors known before a specific donor liver is offered for transplantation and can be used to risk stratify patients while still on the waiting list.</p>
-<p>There are three key functions in <em>transplantr</em> to calculate SOFT scores. The <code><a href="../reference/soft.html">soft()</a></code> function is a vectorised function to calculate the full 19-variable SOFT score, and the <code><a href="../reference/p_soft.html">p_soft()</a></code> function calculates the 14-variable P-SOFT score. There is also a <code><a href="../reference/soft2.html">soft2()</a></code> function to calculate the full SOFT score for patients for whom P-SOFT has already been calculated. The functions use creatinine and albumin, which default to standard international units of µmol/l and g/l, but can be used with US units (mg/dl and g/dl) by setting the optional <code>Units</code> parameter to <code>"US"</code> or by calling any of the wrapper functions using US units by default: <code><a href="../reference/soft_US.html">soft_US()</a></code>, <code><a href="../reference/p_soft_US.html">p_soft_US()</a></code> and <code><a href="../reference/soft2_US.html">soft2_US()</a></code>.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="co"># calculate full SOFT score using international units</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw"><a href="../reference/soft.html">soft</a></span>(<span class="dt">Age =</span> <span class="dv">35</span>, <span class="dt">BMI =</span> <span class="dv">20</span>, <span class="dt">PrevTx =</span> <span class="dv">0</span>, <span class="dt">AbdoSurg =</span> <span class="dv">1</span>, <span class="dt">Albumin =</span> <span class="dv">30</span>, <span class="dt">Dx =</span> <span class="dv">0</span>, </a>
-<a class="sourceLine" id="cb4-3" data-line-number="3">     <span class="dt">ICU =</span> <span class="dv">0</span>, <span class="dt">Admitted =</span> <span class="dv">0</span>, <span class="dt">MELD =</span> <span class="dv">29</span>, <span class="dt">LifeSupport =</span> <span class="dv">0</span>, <span class="dt">Encephalopathy =</span> <span class="dv">1</span>, </a>
-<a class="sourceLine" id="cb4-4" data-line-number="4">     <span class="dt">PVThrombosis =</span> <span class="dv">0</span>, <span class="dt">Ascites =</span> <span class="dv">1</span>, <span class="dt">PortalBleed =</span> <span class="dv">0</span>, <span class="dt">DonorAge =</span> <span class="dv">44</span>, </a>
-<a class="sourceLine" id="cb4-5" data-line-number="5">     <span class="dt">DonorCVA =</span> <span class="dv">0</span>, <span class="dt">DonorSCr =</span> <span class="dv">110</span>, <span class="dt">National =</span> <span class="dv">0</span>, <span class="dt">CIT =</span> <span class="dv">8</span>) </a>
-<a class="sourceLine" id="cb4-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="co"># calculate full SOFT score using US units</span></a>
-<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="kw"><a href="../reference/soft.html">soft</a></span>(<span class="dt">Age =</span> <span class="dv">35</span>, <span class="dt">BMI =</span> <span class="dv">20</span>, <span class="dt">PrevTx =</span> <span class="dv">0</span>, <span class="dt">AbdoSurg =</span> <span class="dv">1</span>, <span class="dt">Albumin =</span> <span class="fl">3.0</span>, <span class="dt">Dx =</span> <span class="dv">0</span>, </a>
-<a class="sourceLine" id="cb4-9" data-line-number="9">     <span class="dt">ICU =</span> <span class="dv">0</span>, <span class="dt">Admitted =</span> <span class="dv">0</span>, <span class="dt">MELD =</span> <span class="dv">29</span>, <span class="dt">LifeSupport =</span> <span class="dv">0</span>, <span class="dt">Encephalopathy =</span> <span class="dv">1</span>, </a>
-<a class="sourceLine" id="cb4-10" data-line-number="10">     <span class="dt">PVThrombosis =</span> <span class="dv">0</span>, <span class="dt">Ascites =</span> <span class="dv">1</span>, <span class="dt">PortalBleed =</span> <span class="dv">0</span>, <span class="dt">DonorAge =</span> <span class="dv">44</span>, </a>
-<a class="sourceLine" id="cb4-11" data-line-number="11">     <span class="dt">DonorCVA =</span> <span class="dv">0</span>, <span class="dt">DonorSCr =</span> <span class="fl">1.2</span>, <span class="dt">National =</span> <span class="dv">0</span>, <span class="dt">CIT =</span> <span class="dv">8</span>, <span class="dt">Units =</span> <span class="st">"US"</span>)</a>
-<a class="sourceLine" id="cb4-12" data-line-number="12"></a>
-<a class="sourceLine" id="cb4-13" data-line-number="13"><span class="co"># calculate P-SOFT score</span></a>
-<a class="sourceLine" id="cb4-14" data-line-number="14"><span class="kw"><a href="../reference/p_soft.html">p_soft</a></span>(<span class="dt">Age =</span> <span class="dv">65</span>, <span class="dt">BMI =</span> <span class="dv">36</span>, <span class="dt">PrevTx =</span> <span class="dv">2</span>, <span class="dt">AbdoSurg =</span> <span class="dv">1</span>, <span class="dt">Albumin =</span> <span class="dv">29</span>, </a>
-<a class="sourceLine" id="cb4-15" data-line-number="15">       <span class="dt">Dx =</span> <span class="dv">0</span>, <span class="dt">ICU =</span> <span class="dv">0</span>, <span class="dt">Admitted =</span> <span class="dv">1</span>, <span class="dt">MELD =</span> <span class="dv">32</span>, <span class="dt">LifeSupport =</span> <span class="dv">0</span>, </a>
-<a class="sourceLine" id="cb4-16" data-line-number="16">       <span class="dt">Encephalopathy =</span> <span class="dv">1</span>, <span class="dt">PVThrombosis =</span> <span class="dv">1</span>, <span class="dt">Ascites =</span> <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb4-17" data-line-number="17"></a>
-<a class="sourceLine" id="cb4-18" data-line-number="18"><span class="co"># calculate P-SOFT with US units</span></a>
-<a class="sourceLine" id="cb4-19" data-line-number="19"><span class="kw"><a href="../reference/p_soft_US.html">p_soft_US</a></span>(<span class="dt">Age =</span> <span class="dv">65</span>, <span class="dt">BMI =</span> <span class="dv">36</span>, <span class="dt">PrevTx =</span> <span class="dv">2</span>, <span class="dt">AbdoSurg =</span> <span class="dv">1</span>, <span class="dt">Albumin =</span> <span class="fl">2.9</span>, </a>
-<a class="sourceLine" id="cb4-20" data-line-number="20">          <span class="dt">Dx =</span> <span class="dv">0</span>, <span class="dt">ICU =</span> <span class="dv">0</span>, <span class="dt">Admitted =</span> <span class="dv">1</span>, <span class="dt">MELD =</span> <span class="dv">32</span>, <span class="dt">LifeSupport =</span> <span class="dv">0</span>, </a>
-<a class="sourceLine" id="cb4-21" data-line-number="21">          <span class="dt">Encephalopathy =</span> <span class="dv">1</span>,<span class="dt">PVThrombosis =</span> <span class="dv">1</span>, <span class="dt">Ascites =</span> <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb4-22" data-line-number="22"></a>
-<a class="sourceLine" id="cb4-23" data-line-number="23"><span class="co"># adding P-SOFT and SOFT as two variables to a tibble using a dplyr pipe</span></a>
-<a class="sourceLine" id="cb4-24" data-line-number="24">liver.recipients =<span class="st"> </span>liver.recipients <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb4-25" data-line-number="25"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="dt">P.Soft =</span> <span class="kw"><a href="../reference/p_soft.html">p_soft</a></span>(age, bmi, prev.tx, abdo.surg, albumin, dialysis,</a>
-<a class="sourceLine" id="cb4-26" data-line-number="26">                         icu, admitted, meld.score, life.support,</a>
-<a class="sourceLine" id="cb4-27" data-line-number="27">                         encephalopathy, pv.thrombosis, ascites),</a>
-<a class="sourceLine" id="cb4-28" data-line-number="28">         <span class="dt">Soft =</span> <span class="kw"><a href="../reference/soft2.html">soft2</a></span>(P.Soft, portal.bleed, donor.age, donor.cva, donor.SCr,</a>
-<a class="sourceLine" id="cb4-29" data-line-number="29">                      sharing, cit))</a></code></pre></div>
+<div class="section level2">
+<h2 id="soft-score">SOFT score<a class="anchor" aria-label="anchor" href="#soft-score"></a>
+</h2>
+<p>The SOFT score (<em>7</em>) aims to predict post-transplant survival
+in adult liver recipients using 19 risk factors. There is also a
+pre-procurement P-SOFT score which uses the 14 risk factors known before
+a specific donor liver is offered for transplantation and can be used to
+risk stratify patients while still on the waiting list.</p>
+<p>There are three key functions in <em>transplantr</em> to calculate
+SOFT scores. The <code><a href="../reference/soft.html">soft()</a></code> function is a vectorised function
+to calculate the full 19-variable SOFT score, and the
+<code><a href="../reference/p_soft.html">p_soft()</a></code> function calculates the 14-variable P-SOFT score.
+There is also a <code><a href="../reference/soft2.html">soft2()</a></code> function to calculate the full SOFT
+score for patients for whom P-SOFT has already been calculated. The
+functions use creatinine and albumin, which default to standard
+international units of µmol/l and g/l, but can be used with US units
+(mg/dl and g/dl) by setting the optional <code>Units</code> parameter to
+<code>"US"</code> or by calling any of the wrapper functions using US
+units by default: <code><a href="../reference/soft_US.html">soft_US()</a></code>, <code><a href="../reference/p_soft_US.html">p_soft_US()</a></code> and
+<code><a href="../reference/soft2_US.html">soft2_US()</a></code>.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># calculate full SOFT score using international units</span></span>
+<span><span class="fu"><a href="../reference/soft.html">soft</a></span><span class="op">(</span>Age <span class="op">=</span> <span class="fl">35</span>, BMI <span class="op">=</span> <span class="fl">20</span>, PrevTx <span class="op">=</span> <span class="fl">0</span>, AbdoSurg <span class="op">=</span> <span class="fl">1</span>, Albumin <span class="op">=</span> <span class="fl">30</span>, Dx <span class="op">=</span> <span class="fl">0</span>, </span>
+<span>     ICU <span class="op">=</span> <span class="fl">0</span>, Admitted <span class="op">=</span> <span class="fl">0</span>, MELD <span class="op">=</span> <span class="fl">29</span>, LifeSupport <span class="op">=</span> <span class="fl">0</span>, Encephalopathy <span class="op">=</span> <span class="fl">1</span>, </span>
+<span>     PVThrombosis <span class="op">=</span> <span class="fl">0</span>, Ascites <span class="op">=</span> <span class="fl">1</span>, PortalBleed <span class="op">=</span> <span class="fl">0</span>, DonorAge <span class="op">=</span> <span class="fl">44</span>, </span>
+<span>     DonorCVA <span class="op">=</span> <span class="fl">0</span>, DonorSCr <span class="op">=</span> <span class="fl">110</span>, National <span class="op">=</span> <span class="fl">0</span>, CIT <span class="op">=</span> <span class="fl">8</span><span class="op">)</span> </span>
+<span></span>
+<span><span class="co"># calculate full SOFT score using US units</span></span>
+<span><span class="fu"><a href="../reference/soft.html">soft</a></span><span class="op">(</span>Age <span class="op">=</span> <span class="fl">35</span>, BMI <span class="op">=</span> <span class="fl">20</span>, PrevTx <span class="op">=</span> <span class="fl">0</span>, AbdoSurg <span class="op">=</span> <span class="fl">1</span>, Albumin <span class="op">=</span> <span class="fl">3.0</span>, Dx <span class="op">=</span> <span class="fl">0</span>, </span>
+<span>     ICU <span class="op">=</span> <span class="fl">0</span>, Admitted <span class="op">=</span> <span class="fl">0</span>, MELD <span class="op">=</span> <span class="fl">29</span>, LifeSupport <span class="op">=</span> <span class="fl">0</span>, Encephalopathy <span class="op">=</span> <span class="fl">1</span>, </span>
+<span>     PVThrombosis <span class="op">=</span> <span class="fl">0</span>, Ascites <span class="op">=</span> <span class="fl">1</span>, PortalBleed <span class="op">=</span> <span class="fl">0</span>, DonorAge <span class="op">=</span> <span class="fl">44</span>, </span>
+<span>     DonorCVA <span class="op">=</span> <span class="fl">0</span>, DonorSCr <span class="op">=</span> <span class="fl">1.2</span>, National <span class="op">=</span> <span class="fl">0</span>, CIT <span class="op">=</span> <span class="fl">8</span>, Units <span class="op">=</span> <span class="st">"US"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># calculate P-SOFT score</span></span>
+<span><span class="fu"><a href="../reference/p_soft.html">p_soft</a></span><span class="op">(</span>Age <span class="op">=</span> <span class="fl">65</span>, BMI <span class="op">=</span> <span class="fl">36</span>, PrevTx <span class="op">=</span> <span class="fl">2</span>, AbdoSurg <span class="op">=</span> <span class="fl">1</span>, Albumin <span class="op">=</span> <span class="fl">29</span>, </span>
+<span>       Dx <span class="op">=</span> <span class="fl">0</span>, ICU <span class="op">=</span> <span class="fl">0</span>, Admitted <span class="op">=</span> <span class="fl">1</span>, MELD <span class="op">=</span> <span class="fl">32</span>, LifeSupport <span class="op">=</span> <span class="fl">0</span>, </span>
+<span>       Encephalopathy <span class="op">=</span> <span class="fl">1</span>, PVThrombosis <span class="op">=</span> <span class="fl">1</span>, Ascites <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># calculate P-SOFT with US units</span></span>
+<span><span class="fu"><a href="../reference/p_soft_US.html">p_soft_US</a></span><span class="op">(</span>Age <span class="op">=</span> <span class="fl">65</span>, BMI <span class="op">=</span> <span class="fl">36</span>, PrevTx <span class="op">=</span> <span class="fl">2</span>, AbdoSurg <span class="op">=</span> <span class="fl">1</span>, Albumin <span class="op">=</span> <span class="fl">2.9</span>, </span>
+<span>          Dx <span class="op">=</span> <span class="fl">0</span>, ICU <span class="op">=</span> <span class="fl">0</span>, Admitted <span class="op">=</span> <span class="fl">1</span>, MELD <span class="op">=</span> <span class="fl">32</span>, LifeSupport <span class="op">=</span> <span class="fl">0</span>, </span>
+<span>          Encephalopathy <span class="op">=</span> <span class="fl">1</span>,PVThrombosis <span class="op">=</span> <span class="fl">1</span>, Ascites <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># adding P-SOFT and SOFT as two variables to a tibble using a dplyr pipe</span></span>
+<span><span class="va">liver.recipients</span> <span class="op">=</span> <span class="va">liver.recipients</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>P.Soft <span class="op">=</span> <span class="fu"><a href="../reference/p_soft.html">p_soft</a></span><span class="op">(</span><span class="va">age</span>, <span class="va">bmi</span>, <span class="va">prev.tx</span>, <span class="va">abdo.surg</span>, <span class="va">albumin</span>, <span class="va">dialysis</span>,</span>
+<span>                         <span class="va">icu</span>, <span class="va">admitted</span>, <span class="va">meld.score</span>, <span class="va">life.support</span>,</span>
+<span>                         <span class="va">encephalopathy</span>, <span class="va">pv.thrombosis</span>, <span class="va">ascites</span><span class="op">)</span>,</span>
+<span>         Soft <span class="op">=</span> <span class="fu"><a href="../reference/soft2.html">soft2</a></span><span class="op">(</span><span class="va">P.Soft</span>, <span class="va">portal.bleed</span>, <span class="va">donor.age</span>, <span class="va">donor.cva</span>, <span class="va">donor.SCr</span>,</span>
+<span>                      <span class="va">sharing</span>, <span class="va">cit</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="dri-and-et-dri" class="section level1">
-<h1 class="hasAnchor">
-<a href="#dri-and-et-dri" class="anchor"></a>DRI and ET-DRI</h1>
-<p>The American DRI score can be calculated using the <code><a href="../reference/liver_dri.html">liver_dri()</a></code> function and European ET-DRI using the <code><a href="../reference/et_dri.html">et_dri()</a></code> function.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># calculate DRI</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="../reference/liver_dri.html">liver_dri</a></span>(<span class="dt">age =</span> <span class="dv">64</span>, <span class="dt">cod =</span> <span class="st">"cva"</span>, <span class="dt">eth =</span> <span class="st">"white"</span>, <span class="dt">dcd =</span> <span class="dv">0</span>, </a>
-<a class="sourceLine" id="cb5-3" data-line-number="3">          <span class="dt">split =</span> <span class="dv">0</span>, <span class="dt">share =</span> <span class="st">"local"</span>, <span class="dt">cit =</span> <span class="dv">14</span>, <span class="dt">height =</span> <span class="dv">170</span>)</a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="co"># calculate ET-DRI</span></a>
-<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="kw"><a href="../reference/et_dri.html">et_dri</a></span>(<span class="dt">age =</span> <span class="dv">39</span>, <span class="dt">cod =</span> <span class="st">"trauma"</span>, <span class="dt">dcd =</span> <span class="dv">0</span>, <span class="dt">split =</span> <span class="dv">0</span>, </a>
-<a class="sourceLine" id="cb5-7" data-line-number="7">       <span class="dt">share =</span> <span class="st">"local"</span>, <span class="dt">cit =</span> <span class="dv">8</span>, <span class="dt">ggt =</span> <span class="dv">50</span>, <span class="dt">rescue =</span> <span class="dv">0</span>)</a></code></pre></div>
+<div class="section level2">
+<h2 id="dri-and-et-dri">DRI and ET-DRI<a class="anchor" aria-label="anchor" href="#dri-and-et-dri"></a>
+</h2>
+<p>The American DRI score can be calculated using the
+<code><a href="../reference/liver_dri.html">liver_dri()</a></code> function and European ET-DRI using the
+<code><a href="../reference/et_dri.html">et_dri()</a></code> function.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># calculate DRI</span></span>
+<span><span class="fu"><a href="../reference/liver_dri.html">liver_dri</a></span><span class="op">(</span>age <span class="op">=</span> <span class="fl">64</span>, cod <span class="op">=</span> <span class="st">"cva"</span>, eth <span class="op">=</span> <span class="st">"white"</span>, dcd <span class="op">=</span> <span class="fl">0</span>, </span>
+<span>          split <span class="op">=</span> <span class="fl">0</span>, share <span class="op">=</span> <span class="st">"local"</span>, cit <span class="op">=</span> <span class="fl">14</span>, height <span class="op">=</span> <span class="fl">170</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># calculate ET-DRI</span></span>
+<span><span class="fu"><a href="../reference/et_dri.html">et_dri</a></span><span class="op">(</span>age <span class="op">=</span> <span class="fl">39</span>, cod <span class="op">=</span> <span class="st">"trauma"</span>, dcd <span class="op">=</span> <span class="fl">0</span>, split <span class="op">=</span> <span class="fl">0</span>, </span>
+<span>       share <span class="op">=</span> <span class="st">"local"</span>, cit <span class="op">=</span> <span class="fl">8</span>, ggt <span class="op">=</span> <span class="fl">50</span>, rescue <span class="op">=</span> <span class="fl">0</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="peld-score" class="section level1">
-<h1 class="hasAnchor">
-<a href="#peld-score" class="anchor"></a>PELD score</h1>
-<p>The PELD score(<em>9</em>) is a paediatric version of MELD, and used to predict mortality in children needing liver transplants. It is based on age, bilirubin, albumin, INR and whether there is growth failure.</p>
-<p>The <code><a href="../reference/peld.html">peld()</a></code> function in <em>transplantr</em> calculates the PELD score. Bilirubin is calculated from their values in µmol/l and albumin in g/l by default, and can be changed to mg/dl and g/dl respectively either by setting the optional <code>units</code> parameter to <code>"US"</code> or by using the <code><a href="../reference/peld_US.html">peld_US()</a></code> wrapper function instead. In the event that albumin is measured locally in g/l and bilirubin in mg/dl, take care to convert it by dividing by 10. Similarly, if albumin is reported in g/dl and bilirubin in µmol/l, multiply the albumin results by 10. The conversion is easily done for a series in a vectorised way by including it in a <em>dplyr</em> pipe:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="co"># calculate PELD where lab reports albumin in g/dl and bilirubin in µmol/l</span></a>
-<a class="sourceLine" id="cb6-2" data-line-number="2">paed.oltx2 =<span class="st"> </span>paed.oltx <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="dt">AlbuminX10 =</span> Patient.Albumin <span class="op">*</span><span class="st"> </span><span class="dv">10</span>,</a>
-<a class="sourceLine" id="cb6-4" data-line-number="4">         <span class="dt">PELD =</span> <span class="kw"><a href="../reference/peld.html">peld</a></span>(<span class="dt">INR =</span> Patient.INR, <span class="dt">bili =</span> Patient.Bilirubin, <span class="dt">albumin =</span> AlbuminX10,</a>
-<a class="sourceLine" id="cb6-5" data-line-number="5">                     <span class="dt">listing_age =</span> Patient.ListAge, <span class="dt">growth_failure =</span> Patient.GrowthFailure))</a>
-<a class="sourceLine" id="cb6-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="co"># calculate PELD where lab reports albumin in g/l and bilirubin in mg/dl</span></a>
-<a class="sourceLine" id="cb6-8" data-line-number="8">paed.oltx2 =<span class="st"> </span>paed.oltx <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-9" data-line-number="9"><span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="dt">AlbuminDiv10 =</span> Patient.Albumin <span class="op">/</span><span class="st"> </span><span class="dv">10</span>,</a>
-<a class="sourceLine" id="cb6-10" data-line-number="10">         <span class="dt">PELD =</span> <span class="kw"><a href="../reference/peld_US.html">peld_US</a></span>(<span class="dt">INR =</span> Patient.INR, <span class="dt">bili =</span> Patient.Bilirubin, <span class="dt">albumin =</span> AlbuminDiv10,</a>
-<a class="sourceLine" id="cb6-11" data-line-number="11">                     <span class="dt">listing_age =</span> Patient.ListAge, <span class="dt">growth_failure =</span> Patient.GrowthFailure))</a></code></pre></div>
+<div class="section level2">
+<h2 id="peld-score">PELD score<a class="anchor" aria-label="anchor" href="#peld-score"></a>
+</h2>
+<p>The PELD score(<em>9</em>) is a paediatric version of MELD, and used
+to predict mortality in children needing liver transplants. It is based
+on age, bilirubin, albumin, INR and whether there is growth failure.</p>
+<p>The <code><a href="../reference/peld.html">peld()</a></code> function in <em>transplantr</em> calculates
+the PELD score. Bilirubin is calculated from their values in µmol/l and
+albumin in g/l by default, and can be changed to mg/dl and g/dl
+respectively either by setting the optional <code>units</code> parameter
+to <code>"US"</code> or by using the <code><a href="../reference/peld_US.html">peld_US()</a></code> wrapper
+function instead. In the event that albumin is measured locally in g/l
+and bilirubin in mg/dl, take care to convert it by dividing by 10.
+Similarly, if albumin is reported in g/dl and bilirubin in µmol/l,
+multiply the albumin results by 10. The conversion is easily done for a
+series in a vectorised way by including it in a <em>dplyr</em> pipe:</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># calculate PELD where lab reports albumin in g/dl and bilirubin in µmol/l</span></span>
+<span><span class="va">paed.oltx2</span> <span class="op">=</span> <span class="va">paed.oltx</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>AlbuminX10 <span class="op">=</span> <span class="va">Patient.Albumin</span> <span class="op">*</span> <span class="fl">10</span>,</span>
+<span>         PELD <span class="op">=</span> <span class="fu"><a href="../reference/peld.html">peld</a></span><span class="op">(</span>INR <span class="op">=</span> <span class="va">Patient.INR</span>, bili <span class="op">=</span> <span class="va">Patient.Bilirubin</span>, albumin <span class="op">=</span> <span class="va">AlbuminX10</span>,</span>
+<span>                     listing_age <span class="op">=</span> <span class="va">Patient.ListAge</span>, growth_failure <span class="op">=</span> <span class="va">Patient.GrowthFailure</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># calculate PELD where lab reports albumin in g/l and bilirubin in mg/dl</span></span>
+<span><span class="va">paed.oltx2</span> <span class="op">=</span> <span class="va">paed.oltx</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>AlbuminDiv10 <span class="op">=</span> <span class="va">Patient.Albumin</span> <span class="op">/</span> <span class="fl">10</span>,</span>
+<span>         PELD <span class="op">=</span> <span class="fu"><a href="../reference/peld_US.html">peld_US</a></span><span class="op">(</span>INR <span class="op">=</span> <span class="va">Patient.INR</span>, bili <span class="op">=</span> <span class="va">Patient.Bilirubin</span>, albumin <span class="op">=</span> <span class="va">AlbuminDiv10</span>,</span>
+<span>                     listing_age <span class="op">=</span> <span class="va">Patient.ListAge</span>, growth_failure <span class="op">=</span> <span class="va">Patient.GrowthFailure</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="pedi-soft" class="section level1">
-<h1 class="hasAnchor">
-<a href="#pedi-soft" class="anchor"></a>Pedi-SOFT</h1>
-<p>The Pedi-SOFT score (<em>10</em>) is intended to predict post-transplant survival in children undergoing liver transplants, and has been demonstrated to predict survival both with infants and children aged 1-12, with c-statistic of 0.70 and 0.77 respectively.</p>
-<p>The score is based on whether a cadaveric technical variant graft was used, recipient weight, whether recipient is on dialysis or has creatinine clearance less than 30ml/min before transplant, whether recipient required life support before transplant and number of any previous transplants.</p>
-<p>The <code><a href="../reference/pedi_soft.html">pedi_soft()</a></code> function in <em>transplantr</em> will calculate the Pedi-SOFT score, and like most other functions in the package it is a vectorised function.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="co"># calculate Pedi-SOFT score</span></a>
-<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw"><a href="../reference/pedi_soft.html">pedi_soft</a></span>(<span class="dt">CTVG =</span> <span class="dv">1</span>, <span class="dt">Weight =</span> <span class="dv">10</span>, <span class="dt">Dx =</span> <span class="dv">0</span>, <span class="dt">LifeSupport =</span> <span class="dv">0</span>, <span class="dt">PrevTx =</span> <span class="dv">0</span>) <span class="co"># 4</span></a></code></pre></div>
+<div class="section level2">
+<h2 id="pedi-soft">Pedi-SOFT<a class="anchor" aria-label="anchor" href="#pedi-soft"></a>
+</h2>
+<p>The Pedi-SOFT score (<em>10</em>) is intended to predict
+post-transplant survival in children undergoing liver transplants, and
+has been demonstrated to predict survival both with infants and children
+aged 1-12, with c-statistic of 0.70 and 0.77 respectively.</p>
+<p>The score is based on whether a cadaveric technical variant graft was
+used, recipient weight, whether recipient is on dialysis or has
+creatinine clearance less than 30ml/min before transplant, whether
+recipient required life support before transplant and number of any
+previous transplants.</p>
+<p>The <code><a href="../reference/pedi_soft.html">pedi_soft()</a></code> function in <em>transplantr</em> will
+calculate the Pedi-SOFT score, and like most other functions in the
+package it is a vectorised function.</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># calculate Pedi-SOFT score</span></span>
+<span><span class="fu"><a href="../reference/pedi_soft.html">pedi_soft</a></span><span class="op">(</span>CTVG <span class="op">=</span> <span class="fl">1</span>, Weight <span class="op">=</span> <span class="fl">10</span>, Dx <span class="op">=</span> <span class="fl">0</span>, LifeSupport <span class="op">=</span> <span class="fl">0</span>, PrevTx <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="co"># 4</span></span></code></pre></div>
 </div>
-<div id="references" class="section level1">
-<h1 class="hasAnchor">
-<a href="#references" class="anchor"></a>References</h1>
+<div class="section level2">
+<h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
 <ol style="list-style-type: decimal">
-<li><p>Kamath PS, Wiesner RH, Malinchoc M, et al. A model to predict survival in patients with end-stage liver disease. <em>Hepatology</em> 2001; 33:464-470. DOI: <a href="https://doi.org/10.1053/jhep.2001.22172">10.1053/jhep.2001.22172</a></p></li>
-<li><p>Biggins SW, Kim WR, Terrault NA, et al. Evidence-based incorporation of serum sodium concentration into MELD. <em>Gastroenterology</em> 2006; 130(6):1652-60. DOI: <a href="https://doi.org/10.1053/j.gastro.2006.02.010">10.1053/j.gastro.2006.02.010</a></p></li>
-<li><p>Barber KM, Madden S, Allen J, et al. Elective liver transplant list mortality: development of a United Kingdom end-stage liver disease score. <em>Transplantation</em> 2011; 92(4):469-76. DOI: <a href="https://doi.org/10.1097/TP.0b013e318225db4d">10.1097/TP.0b013e318225db4d</a>.</p></li>
-<li><p>Wiesner R, Edwards E, Freeman R, et al. United Network for Organ Sharing Liver Disease Severity Score Committee. Model for end-stage liver disease (MELD) and allocation of donor livers. <em>Gastroenterology</em> 2003: 124:91-96.</p></li>
-<li><p>Brown RS Jr, Kumar KS, Russo MW, et al. Model for end-stage liver disease and Child-Turcotte-Pugh score as predictors of pre-transplantation disease severity, posttransplantation outcome, and resource utilization in the United Network for Organ Sharing status 2A patients. <em>Liver Transplant</em> 2002: 8:278-284.</p></li>
-<li><p>Desai NM, Mange KC, Crawford MD, et al. Predicting outcome after liver transplantation: Utility of the model of end-stage liver disease and a newly derived discrimination function. <em>Transplantation</em> 2004; 77:99-106.</p></li>
-<li><p>Rana A, Hardy MA, Halazun KJ, et al. Survival Outcomes Following Liver Transplantation (SOFT) Score: A Novel Method to Predict Patient Survival Following Liver Transplantation. <em>American Journal of Transplantation</em> 2008: 8:2537-2546. DOI: <a href="https://doi.org/10.1111/j.1600-6143.2008.02400.x">10.1111/j.1600-6143.2008.02400.x</a></p></li>
-<li><p>Dutkowski P, Oberkofler CE, Slankamenac K, et al. Are There Better Guidelines for Allocation in Liver Transplantation? A Novel Score Targeting Justice and Utility in the Model for End-Stage Liver Disease Era. Annals of Surgery 2011; 254:745-753. DOI: <a href="https://doi.org/10.1097/SLA.0b013e3182365081">10.1097/SLA.0b013e3182365081</a></p></li>
-<li><p>Feng S, Goodrich NP, Bragg-Gresham JL, et al. Characteristics Associated with Liver Graft Failure: The Concept of a Donor Risk Index. <em>American Journal of Transplantation</em> 2006; 6:783–790. DOI: <a href="https://doi.org/10.1111/j.1600-6143.2006.01242.x">10.1111/j.1600-6143.2006.01242.x</a></p></li>
-<li><p>Braat AE, Blok JJ, Putter H, et al. The Eurotransplant Donor Risk Index in Liver Transplantation: ET-DRI. American Journal of Transplantation 2012; 12:2789–2796. <a href="https://doi.org/10.1111/j.1600-6143.2012.04195.x">10.1111/j.1600-6143.2012.04195.x</a></p></li>
-<li><p>McDiarmid SV, Anand R, Lindblad AS, et. al. Development of a pediatric end-stage liver disease score to predict poor outcome in children awaiting liver transplantation. <em>Transplantation</em> 2002; 74(2):173-81. DOI: <a href="https://doi.org/10.1097/00007890-200207270-00006">10.1097/00007890-200207270-00006</a></p></li>
-<li><p>Rana A, Pallister ZS, Guiteau JJ, et al. Survival Outcomes Following Pediatric Liver Transplantation (Pedi-SOFT) Score: A Novel Predictive Index. <em>American Journal of Transplantation</em> 2015; 15:1855-1863. DOI: <a href="https://doi.org/10.1111/ajt.13190">10.1111/ajt.13190</a></p></li>
+<li><p>Kamath PS, Wiesner RH, Malinchoc M, et al. A model to predict
+survival in patients with end-stage liver disease. <em>Hepatology</em>
+2001; 33:464-470. DOI: <a href="https://doi.org/10.1053/jhep.2001.22172" class="external-link">10.1053/jhep.2001.22172</a></p></li>
+<li><p>Biggins SW, Kim WR, Terrault NA, et al. Evidence-based
+incorporation of serum sodium concentration into MELD.
+<em>Gastroenterology</em> 2006; 130(6):1652-60. DOI: <a href="https://doi.org/10.1053/j.gastro.2006.02.010" class="external-link">10.1053/j.gastro.2006.02.010</a></p></li>
+<li><p>Barber KM, Madden S, Allen J, et al. Elective liver transplant
+list mortality: development of a United Kingdom end-stage liver disease
+score. <em>Transplantation</em> 2011; 92(4):469-76. DOI: <a href="https://doi.org/10.1097/TP.0b013e318225db4d" class="external-link">10.1097/TP.0b013e318225db4d</a>.</p></li>
+<li><p>Wiesner R, Edwards E, Freeman R, et al. United Network for Organ
+Sharing Liver Disease Severity Score Committee. Model for end-stage
+liver disease (MELD) and allocation of donor livers.
+<em>Gastroenterology</em> 2003: 124:91-96.</p></li>
+<li><p>Brown RS Jr, Kumar KS, Russo MW, et al. Model for end-stage liver
+disease and Child-Turcotte-Pugh score as predictors of
+pre-transplantation disease severity, posttransplantation outcome, and
+resource utilization in the United Network for Organ Sharing status 2A
+patients. <em>Liver Transplant</em> 2002: 8:278-284.</p></li>
+<li><p>Desai NM, Mange KC, Crawford MD, et al. Predicting outcome after
+liver transplantation: Utility of the model of end-stage liver disease
+and a newly derived discrimination function. <em>Transplantation</em>
+2004; 77:99-106.</p></li>
+<li><p>Rana A, Hardy MA, Halazun KJ, et al. Survival Outcomes Following
+Liver Transplantation (SOFT) Score: A Novel Method to Predict Patient
+Survival Following Liver Transplantation. <em>American Journal of
+Transplantation</em> 2008: 8:2537-2546. DOI: <a href="https://doi.org/10.1111/j.1600-6143.2008.02400.x" class="external-link">10.1111/j.1600-6143.2008.02400.x</a></p></li>
+<li><p>Dutkowski P, Oberkofler CE, Slankamenac K, et al. Are There
+Better Guidelines for Allocation in Liver Transplantation? A Novel Score
+Targeting Justice and Utility in the Model for End-Stage Liver Disease
+Era. Annals of Surgery 2011; 254:745-753. DOI: <a href="https://doi.org/10.1097/SLA.0b013e3182365081" class="external-link">10.1097/SLA.0b013e3182365081</a></p></li>
+<li><p>Feng S, Goodrich NP, Bragg-Gresham JL, et al. Characteristics
+Associated with Liver Graft Failure: The Concept of a Donor Risk Index.
+<em>American Journal of Transplantation</em> 2006; 6:783–790. DOI: <a href="https://doi.org/10.1111/j.1600-6143.2006.01242.x" class="external-link">10.1111/j.1600-6143.2006.01242.x</a></p></li>
+<li><p>Braat AE, Blok JJ, Putter H, et al. The Eurotransplant Donor Risk
+Index in Liver Transplantation: ET-DRI. American Journal of
+Transplantation 2012; 12:2789–2796. <a href="https://doi.org/10.1111/j.1600-6143.2012.04195.x" class="external-link">10.1111/j.1600-6143.2012.04195.x</a></p></li>
+<li><p>McDiarmid SV, Anand R, Lindblad AS, et. al. Development of a
+pediatric end-stage liver disease score to predict poor outcome in
+children awaiting liver transplantation. <em>Transplantation</em> 2002;
+74(2):173-81. DOI: <a href="https://doi.org/10.1097/00007890-200207270-00006" class="external-link">10.1097/00007890-200207270-00006</a></p></li>
+<li><p>Rana A, Pallister ZS, Guiteau JJ, et al. Survival Outcomes
+Following Pediatric Liver Transplantation (Pedi-SOFT) Score: A Novel
+Predictive Index. <em>American Journal of Transplantation</em> 2015;
+15:1855-1863. DOI: <a href="https://doi.org/10.1111/ajt.13190" class="external-link">10.1111/ajt.13190</a></p></li>
 </ol>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li>
-<a href="#introduction">Introduction</a><ul class="nav nav-pills nav-stacked">
-<li><a href="#adult-risk-stratification">Adult risk stratification</a></li>
-      <li><a href="#risk-stratification-in-children">Risk stratification in children</a></li>
-      </ul>
-</li>
-      <li><a href="#meld-and-meld-na-scores">MELD and MELD-Na scores</a></li>
-      <li><a href="#ukeld-score">UKELD score</a></li>
-      <li><a href="#soft-score">SOFT score</a></li>
-      <li><a href="#dri-and-et-dri">DRI and ET-DRI</a></li>
-      <li><a href="#peld-score">PELD score</a></li>
-      <li><a href="#pedi-soft">Pedi-SOFT</a></li>
-      <li><a href="#references">References</a></li>
-      </ul>
-</div>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+
       </div>
 
 </div>
@@ -284,17 +403,21 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by John Asher.</p>
+  <p></p>
+<p>Developed by John Asher.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
       </footer>
 </div>
 
-  
+
+
+
 
 
   </body>

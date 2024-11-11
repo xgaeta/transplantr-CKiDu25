@@ -6,26 +6,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Audit and Research Functions for Transplantation • transplantr</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Audit and Research Functions for Transplantation">
-<meta property="og:description" content="A set of vectorised functions to calculate medical equations used in transplantation, 
-    focused mainly on transplantation of abdominal organs. These functions include donor and recipient
-    risk indices as used by NHS Blood &amp; Transplant, OPTN/UNOS and Eurotransplant, tools for 
-    quantifying HLA mismatches, functions for calculating estimated glomerular filtration rate (eGFR), 
-    a function to calculate the APRI (AST to platelet ratio) score used in initial screening of suitability to receive a 
-    transplant from a hepatitis C seropositive donor and some biochemical unit converter functions. 
-    All functions are designed to work with either US or international units.
-    References for the equations are provided in the vignettes and function documentation.">
-<meta name="twitter:card" content="summary">
+<meta property="og:description" content="A set of vectorised functions to calculate medical equations used in transplantation, focused mainly on transplantation of abdominal organs. These functions include donor and recipient risk indices as used by NHS Blood &amp; Transplant, OPTN/UNOS and Eurotransplant, tools for quantifying HLA mismatches, functions for calculating estimated glomerular filtration rate (eGFR), a function to calculate the APRI (AST to platelet ratio) score used in initial screening of suitability to receive a transplant from a hepatitis C seropositive donor and some biochemical unit converter functions. All functions are designed to work with either US or international units. References for the equations are provided in the vignettes and function documentation.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
+
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -38,25 +33,19 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">transplantr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.2.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -80,9 +69,9 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/johnasher/transplantr">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
+  <a href="https://github.com/johnasher/transplantr/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
+
   </a>
 </li>
       </ul>
@@ -93,154 +82,188 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="contents col-md-9">
 
-<div id="transplantr" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#transplantr" class="anchor"></a>transplantr</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="transplantr">transplantr<a class="anchor" aria-label="anchor" href="#transplantr"></a>
+</h1></div>
 <p>The <em>transplantr</em> package provides a set of vectorised functions for audit and clinical research in solid organ transplantation. These are particularly intended to work well with multiple datapoints in large series of data, where manual calculations would be particularly tedious.</p>
-<p>The functions provided fall into four groups:</p>
+<p>The functions provided fall into three groups:</p>
 <ul>
 <li>Donor and recipient risk indices</li>
 <li>HLA mismatch level calculators</li>
 <li>Estimated GFR calculators</li>
 <li>Biochemical unit converters</li>
 </ul>
-<p>Although the package was built with unit tests, inaccuracies cannot be completely excluded. it is not a medical device and should not be used for making clinical decisions. References to the publications of the formulae are provided in the vignettes and documentation of individual functions.</p>
-</div>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
-<p>transplantr can be installed from CRAN:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install transplantr</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"transplantr"</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co"># load transplantr once installed</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(transplantr)</a></code></pre></div>
-<div id="development-version" class="section level2">
-<h2 class="hasAnchor">
-<a href="#development-version" class="anchor"></a>Development version</h2>
-<p>The development version can be installed from GitHub, if you want all the latest features, together with all the latest bugs and errors. Installing from CRAN is the best option for most users as the submitted packages have to pass some very pedantic automated tests before they can be hosted on CRAN. If you do want the <em>caveat emptor</em>, you have been warned version, this is how:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install from GitHub</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">devtools<span class="op">::</span><span class="kw">install_packages</span>(<span class="st">"johnasher/transplantr"</span>)</a></code></pre></div>
+<p>Although the package was built with unit tests, inaccuracies cannot be completely excluded. it is not a medical device and should not be used for making clinical decisions.</p>
+<div class="section level2">
+<h2 id="transplantr-ckidu25">transplantr-CKiDu25<a class="anchor" aria-label="anchor" href="#transplantr-ckidu25"></a>
+</h2>
+<p>You are viewing a fork of the <a href="https://cran.r-project.org/web/packages/transplantr/index.html" title="CRAN repository for transplantr package" class="external-link">main CRAN transplantr package</a> updated to include functions for calculating pediatric eGFR based on the following publication:</p>
+<p>Pierce CB, Muñoz A, Ng DK, Warady BA, Furth SL, Schwartz GJ. <strong>Age- and sex-dependent clinical equations to estimate glomerular filtration rates in children and young adults with chronic kidney disease.</strong> <em>Kidney International</em>. 2021;99(4):948–956. <a href="https://doi.org/10.1016/j.kint.2020.10.047" title="Persistent DOI link for Pierce et al. paper" class="external-link">doi:10.1016/j.kint.2020.10.047</a></p>
 </div>
 </div>
-<div id="tips-on-using-transplantr" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tips-on-using-transplantr" class="anchor"></a>Tips on using <em>transplantr</em>
+<div class="section level1">
+<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h1>
+<p>This version of transplantr can be installed from github:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install transplantr</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"xgaeta/transplantr-CKiDu25"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># load transplantr once installed</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://transplantr.txtools.net" class="external-link">transplantr</a></span><span class="op">)</span></span></code></pre></div>
+<div class="section level2">
+<h2 id="development-version">Development version<a class="anchor" aria-label="anchor" href="#development-version"></a>
+</h2>
+<p>These new equations follow the same style as the rest of the package, including sex as a binary variable. Height is provided in cm. They currently use US based equations. Outputs are in mL/min/1.73m<sup>2</sup>.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">CKiD_U25_cystatin_US</span><span class="op">(</span>cystatin <span class="op">=</span> <span class="fl">1.2</span>, age <span class="op">=</span> <span class="fl">9.5</span>, sex <span class="op">=</span> <span class="st">"F"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">CKiD_U25_creatinine_US</span><span class="op">(</span>creat <span class="op">=</span> <span class="fl">0.8</span>, age <span class="op">=</span> <span class="fl">9.5</span>, sex <span class="op">=</span> <span class="st">"F"</span>, height <span class="op">=</span> <span class="fl">132</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">CKiD_U25_combined_US</span><span class="op">(</span>cystatin <span class="op">=</span> <span class="fl">1.2</span>, creat <span class="op">=</span> <span class="fl">0.8</span>, age <span class="op">=</span> <span class="fl">9.5</span>, sex <span class="op">=</span> <span class="st">"F"</span>, height <span class="op">=</span> <span class="fl">132</span>, verbose <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<p><a href="https://github.com/johnasher/transplantr/pull/5" title="Current status of CKiD U25 pull request" class="external-link">Pull requests have been filed</a> to merge these equations into the main <a href="https://github.com/johnasher/transplantr/" title="Github repository for original transplantr package, currently v0.2.0" class="external-link">transplantr</a> package</p>
+</div>
+<div class="section level2">
+<h2 id="remainder-of-the-base-transplantr-readme-is-included-below">Remainder of the base <em>transplantr</em> Readme is included below:<a class="anchor" aria-label="anchor" href="#remainder-of-the-base-transplantr-readme-is-included-below"></a>
+</h2>
+<hr>
+</div>
+</div>
+<div class="section level1">
+<h1 id="tips-on-using-transplantr">Tips on using <em>transplantr</em>
+<a class="anchor" aria-label="anchor" href="#tips-on-using-transplantr"></a>
 </h1>
 <p>As vectorised functions, the functions can be applied across a whole dataset fairly rapidly. I find that the easiest way to do this is using a “pipe” of functions from the <em>dplyr</em> package. <em>dplyr</em> can be installed on its own or, as I would recommend, by installing the whole <em>tidyverse</em> family of packages - a family which includes the legendary <em>ggplot2</em> graphing package.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># install whole tidyverse</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"tidyverse"</span>)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co"># install just dplyr</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"dplyr"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install whole tidyverse</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># install just dplyr</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"dplyr"</span><span class="op">)</span></span></code></pre></div>
 <p>Although recommended, <em>dplyr</em> is not necessary for most <em>transplantr</em> functions to work. <em>dplyr</em> is needed for the EPTS and KDPI functions, and additionally <em>stringr</em> is needed for the <code><a href="reference/hla_mm_level_str.html">hla_mm_level_str()</a></code> function and also for the <code><a href="reference/chi2dob.html">chi2dob()</a></code> function, one unlikely to be needed by anyone working outside Scotland!</p>
-<div id="biochemical-units" class="section level2">
-<h2 class="hasAnchor">
-<a href="#biochemical-units" class="anchor"></a>Biochemical units</h2>
+<div class="section level2">
+<h2 id="biochemical-units">Biochemical units<a class="anchor" aria-label="anchor" href="#biochemical-units"></a>
+</h2>
 <p>By default, all the functions work with the units most commonly used in the UK, which for creatinine and bilirubin is µmol/l, but each function using either of these can be used with mg/dl instead by changing an optional <code>units</code> parameter to <code>"US"</code> or by calling a wrapper function suffixed with <code>_US()</code>; e.g. when calculating eGFR, the <code><a href="reference/ckd_epi_US.html">ckd_epi_US()</a></code> function calls <code><a href="reference/ckd_epi.html">ckd_epi()</a></code> using creatinine in mg/dl.</p>
 <p>Albumin is generally reported in g/l in the UK, but more commonly as g/dl in the US. The few functions using albumin default to g/l but change to g/dl if the <code>units</code> parameter is set to <code>"US"</code> or the <code>_US()</code> wrapper function is called.</p>
-<p>Which is the best option to use? Calling the wrapper function uses fewer keystrokes so is quicker to type, but as it is a function calling another function, there is a slight increase in computational overhead; for example, benchmarking the time taken to calculate 100,000 eGFR results, the median time was 106 milliseconds with <code><a href="reference/ckd_epi.html">ckd_epi()</a></code> and 108 milliseconds using the more convenient <code><a href="reference/ckd_epi_US.html">ckd_epi_US()</a></code>.</p>
+<p>Which is the best option to use? Calling the wrapper function uses fewer keystrokes so is quicker to type, but as it is a function calling another function, there is a slight increase in computational overhead.</p>
 </div>
-<div id="using-transplantr-functions-with-dplyr" class="section level2">
-<h2 class="hasAnchor">
-<a href="#using-transplantr-functions-with-dplyr" class="anchor"></a>Using <em>transplantr</em> functions with <em>dplyr</em>
+<div class="section level2">
+<h2 id="using-transplantr-functions-with-dplyr">Using <em>transplantr</em> functions with <em>dplyr</em>
+<a class="anchor" aria-label="anchor" href="#using-transplantr-functions-with-dplyr"></a>
 </h2>
 <p>Let’s say you want to calculate MELD scores for a series of liver transplant candidates. OK, you probably actually want MELD-Na, but let’s go with MELD as it has fewer variables! The data is in a dataframe or tibble called “oltx.assessments” and the relevant variables are Patient.INR, Patient.Bilirubin, Patient.Creatinine and Patient.Dialysed. To add a new Patient.MELD variable to the dataframe, you would use a <em>dplyr</em> pipe with the <code>mutate()</code> verb:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">oltx.assessments &lt;-<span class="st"> </span>oltx.assessments <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Patient.MELD =</span> <span class="kw"><a href="reference/meld.html">meld</a></span>(<span class="dt">INR =</span> Patient.INR, <span class="dt">bili =</span> Patient.Bilirubin,</a>
-<a class="sourceLine" id="cb4-3" data-line-number="3">        <span class="dt">creat =</span> Patient.Creatinine, <span class="dt">dialysis =</span> Patient.Dialysed, <span class="dt">units =</span> <span class="st">"SI"</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">oltx.assessments</span> <span class="op">&lt;-</span> <span class="va">oltx.assessments</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">mutate</span><span class="op">(</span>Patient.MELD <span class="op">=</span> <span class="fu"><a href="reference/meld.html">meld</a></span><span class="op">(</span>INR <span class="op">=</span> <span class="va">Patient.INR</span>, bili <span class="op">=</span> <span class="va">Patient.Bilirubin</span>,</span>
+<span>        creat <span class="op">=</span> <span class="va">Patient.Creatinine</span>, dialysis <span class="op">=</span> <span class="va">Patient.Dialysed</span>, units <span class="op">=</span> <span class="st">"SI"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p>The <code>units = "SI"</code> can be left out provided that creatinine and bilirubin are both in µmol/l. To switch to mg/dl, use <code>units = "US"</code> or call <code><a href="reference/meld_US.html">meld_US()</a></code> instead.</p>
 </div>
-<div id="using-transplantr-functions-with-base-r" class="section level2">
-<h2 class="hasAnchor">
-<a href="#using-transplantr-functions-with-base-r" class="anchor"></a>Using <em>transplantr</em> functions with base R</h2>
-<p>Although I think <em>dplyr</em> makes life much easier when organising data, I concede that some people prefer to use base R functions instead. Using a vectorised function with multiple vector inputs is not easy in base R but can be done with the <code><a href="https://rdrr.io/r/base/mapply.html">mapply()</a></code>, or more easily with the <code>pmap_dbl()</code> from the <em>purrr</em> package.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># attach oltx.assessments to save a lot of typing!</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/attach.html">attach</a></span>(oltx.assessments)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co"># method using pmap_dbl()</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5">oltx.assessments<span class="op">$</span>Patient.MELD =<span class="st"> </span><span class="kw">pmap_dbl</span>(<span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(Patient.INR, Patient.Bilirubin,</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">                                              Patient.Creatinine, Patient.Dialysed),</a>
-<a class="sourceLine" id="cb5-7" data-line-number="7">                                          meld, <span class="dt">units =</span> <span class="st">"SI"</span>)</a>
-<a class="sourceLine" id="cb5-8" data-line-number="8"></a>
-<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="co"># alternative method using mapply()</span></a>
-<a class="sourceLine" id="cb5-10" data-line-number="10">oltx.assessments<span class="op">$</span>Patient.MELD =<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/mapply.html">mapply</a></span>(<span class="dt">FUN =</span> meld, Patient.INR, Patient.Bilirubin,</a>
-<a class="sourceLine" id="cb5-11" data-line-number="11">                                        Patient.Creatinine, Patient.Dialysed,</a>
-<a class="sourceLine" id="cb5-12" data-line-number="12">                                        <span class="dt">MoreArgs =</span> <span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="dt">units =</span> <span class="st">"SI"</span>),</a>
-<a class="sourceLine" id="cb5-13" data-line-number="13">                                        <span class="dt">SIMPLIFY =</span> <span class="ot">TRUE</span>)</a>
-<a class="sourceLine" id="cb5-14" data-line-number="14"></a>
-<a class="sourceLine" id="cb5-15" data-line-number="15"><span class="co"># detach oltx.assessments to avoid namespace errors</span></a>
-<a class="sourceLine" id="cb5-16" data-line-number="16"><span class="kw"><a href="https://rdrr.io/r/base/detach.html">detach</a></span>(oltx.assessments)</a></code></pre></div>
-<p>The advantage of using a <em>dplyr</em> pipe, apart from easier code, is speed. Benchmarking on a basic Linux laptop showed that the median time to perform vectorised calculation of 100,000 MELD scores was 115 milliseconds, compared with 6007 milliseconds using `<code>pmap_dbl()</code> and 6484 with <code><a href="https://rdrr.io/r/base/mapply.html">mapply()</a></code>.</p>
+<div class="section level2">
+<h2 id="using-transplantr-functions-with-base-r">Using <em>transplantr</em> functions with base R<a class="anchor" aria-label="anchor" href="#using-transplantr-functions-with-base-r"></a>
+</h2>
+<p>Although I think <em>dplyr</em> makes life much easier when organising data, I concede that some people prefer to use base R functions instead. Using a vectorised function with multiple vector inputs is not easy in base R but can be done with the <code><a href="https://rdrr.io/r/base/mapply.html" class="external-link">mapply()</a></code>, or more easily with the <code>pmap_dbl()</code> from the <em>purrr</em> package.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># attach oltx.assessments to save a lot of typing!</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/attach.html" class="external-link">attach</a></span><span class="op">(</span><span class="va">oltx.assessments</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># method using pmap_dbl()</span></span>
+<span><span class="va">oltx.assessments</span><span class="op">$</span><span class="va">Patient.MELD</span> <span class="op">=</span> <span class="fu">pmap_dbl</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">Patient.INR</span>, <span class="va">Patient.Bilirubin</span>,</span>
+<span>                                              <span class="va">Patient.Creatinine</span>, <span class="va">Patient.Dialysed</span><span class="op">)</span>,</span>
+<span>                                          <span class="va">meld</span>, units <span class="op">=</span> <span class="st">"SI"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># alternative method using mapply()</span></span>
+<span><span class="va">oltx.assessments</span><span class="op">$</span><span class="va">Patient.MELD</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mapply.html" class="external-link">mapply</a></span><span class="op">(</span>FUN <span class="op">=</span> <span class="va">meld</span>, <span class="va">Patient.INR</span>, <span class="va">Patient.Bilirubin</span>,</span>
+<span>                                        <span class="va">Patient.Creatinine</span>, <span class="va">Patient.Dialysed</span>,</span>
+<span>                                        MoreArgs <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>units <span class="op">=</span> <span class="st">"SI"</span><span class="op">)</span>,</span>
+<span>                                        SIMPLIFY <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># detach oltx.assessments to avoid namespace errors</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/detach.html" class="external-link">detach</a></span><span class="op">(</span><span class="va">oltx.assessments</span><span class="op">)</span></span></code></pre></div>
+<p>The advantage of using a <em>dplyr</em> pipe, apart from easier code, is speed. Benchmarking on a basic Linux laptop showed that the median time to perform vectorised calculation of 100,000 MELD scores was 115 milliseconds, compared with 6007 milliseconds using `<code>pmap_dbl()</code> and 6484 with <code><a href="https://rdrr.io/r/base/mapply.html" class="external-link">mapply()</a></code>.</p>
 </div>
-<div id="using-the-functions-with-a-single-case" class="section level2">
-<h2 class="hasAnchor">
-<a href="#using-the-functions-with-a-single-case" class="anchor"></a>Using the functions with a single case</h2>
+<div class="section level2">
+<h2 id="using-the-functions-with-a-single-case">Using the functions with a single case<a class="anchor" aria-label="anchor" href="#using-the-functions-with-a-single-case"></a>
+</h2>
 <p>Although vectorised functions for multiple calculations are one of the best features of R, you might just want to collect data on a single case. This is very straightforward:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="co"># using µmol/l</span></a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw"><a href="reference/meld.html">meld</a></span>(<span class="dt">INR =</span> <span class="fl">2.1</span>, <span class="dt">bili =</span> <span class="dv">34</span>, <span class="dt">creat =</span> <span class="dv">201</span>, <span class="dt">dialysis =</span> <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co"># using mg/dl</span></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="kw"><a href="reference/meld.html">meld</a></span>(<span class="dt">INR =</span>  <span class="fl">2.1</span>, <span class="dt">bili =</span> <span class="fl">2.0</span>, <span class="dt">creat =</span> <span class="fl">2.3</span>, <span class="dt">dialysis =</span> <span class="dv">0</span>, <span class="dt">units =</span> <span class="st">"US"</span>)</a>
-<a class="sourceLine" id="cb6-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="co"># using mg/dl with wrapper function</span></a>
-<a class="sourceLine" id="cb6-8" data-line-number="8"><span class="kw"><a href="reference/meld_US.html">meld_US</a></span>(<span class="dt">INR =</span>  <span class="fl">2.1</span>, <span class="dt">bili =</span> <span class="fl">2.0</span>, <span class="dt">creat =</span> <span class="fl">2.3</span>, <span class="dt">dialysis =</span> <span class="dv">0</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># using µmol/l</span></span>
+<span><span class="fu"><a href="reference/meld.html">meld</a></span><span class="op">(</span>INR <span class="op">=</span> <span class="fl">2.1</span>, bili <span class="op">=</span> <span class="fl">34</span>, creat <span class="op">=</span> <span class="fl">201</span>, dialysis <span class="op">=</span> <span class="fl">0</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># using mg/dl</span></span>
+<span><span class="fu"><a href="reference/meld.html">meld</a></span><span class="op">(</span>INR <span class="op">=</span>  <span class="fl">2.1</span>, bili <span class="op">=</span> <span class="fl">2.0</span>, creat <span class="op">=</span> <span class="fl">2.3</span>, dialysis <span class="op">=</span> <span class="fl">0</span>, units <span class="op">=</span> <span class="st">"US"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># using mg/dl with wrapper function</span></span>
+<span><span class="fu"><a href="reference/meld_US.html">meld_US</a></span><span class="op">(</span>INR <span class="op">=</span>  <span class="fl">2.1</span>, bili <span class="op">=</span> <span class="fl">2.0</span>, creat <span class="op">=</span> <span class="fl">2.3</span>, dialysis <span class="op">=</span> <span class="fl">0</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
-<div id="bug-reports-and-feature-requests" class="section level1">
-<h1 class="hasAnchor">
-<a href="#bug-reports-and-feature-requests" class="anchor"></a>Bug reports and feature requests</h1>
-<p>Due to rounding errors, functions may return slightly different values to those from other calculators, including online calculators and even using R and <em>transplantr</em> on different computers. But if you encounter a definite bug, please file a report with minimal reproducible example of your R code at <a href="https://www.github.com/johnasher/transplantr/issues">GitHub</a>. Requests for new features can also be made on GitHub.</p>
+<div class="section level1">
+<h1 id="more-information">More information<a class="anchor" aria-label="anchor" href="#more-information"></a>
+</h1>
+<p>For more information, function documentation and usage vignettes, visit <a href="https://transplantr.txtools.net/" class="external-link">transplantr.txtools.net</a>.</p>
 </div>
 
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=transplantr">https://​cloud.r-project.org/​package=transplantr</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/johnasher/transplantr">https://​github.com/​johnasher/​transplantr</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/johnasher/transplantr/issues">https://​github.com/​johnasher/​transplantr/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=transplantr" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/johnasher/transplantr/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/johnasher/transplantr/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></li>
+<li><a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing transplantr</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>John Asher <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-8735-6453" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
+<li>John Asher <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-8735-6453" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by John Asher.</p>
+  <p></p>
+<p>Developed by John Asher.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
       </footer>
 </div>
 
-  
+
+
+
 
 
   </body>
