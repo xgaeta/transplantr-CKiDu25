@@ -17,6 +17,8 @@ Although the package was built with unit tests, inaccuracies cannot be
 completely excluded. it is not a medical device and should not be used
 for making clinical decisions.
 
+## transplantr-CKiDu25
+
 You are viewing a fork of the [main CRAN transplantr
 package](https://cran.r-project.org/web/packages/transplantr/index.html "CRAN repository for transplantr package")
 updated to include functions for calculating pediatric eGFR based on the
@@ -43,14 +45,16 @@ library(transplantr)
 ## Development version
 
 These new equations follow the same style as the rest of the package,
-including sex as a binary variable with 0 for female and 1 for male.
-Height is provided in cm. They currently use US based equations. Outputs
-are in mL/min/1.73m<sup>2</sup>.
+including sex as a binary variable. Height is provided in cm. They
+currently use US based equations. Outputs are in
+mL/min/1.73m<sup>2</sup>.
 
 ``` r
 CKiD_U25_cystatin_US(cystatin = 1.2, age = 9.5, sex = "F")
+
 CKiD_U25_creatinine_US(creat = 0.8, age = 9.5, sex = "F", height = 132)
-CKiD_U25_combined_US(cystatin = 1.2, creat = 0.8, age = 9.5, sex = "F",                      height = 132, verbose = TRUE)
+
+CKiD_U25_combined_US(cystatin = 1.2, creat = 0.8, age = 9.5, sex = "F", height = 132, verbose = TRUE)
 ```
 
 [Pull requests have been
