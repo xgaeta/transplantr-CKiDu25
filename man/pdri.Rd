@@ -4,8 +4,19 @@
 \alias{pdri}
 \title{Pancreas donor risk index}
 \usage{
-pdri(age, sex, creat, eth, bmi, height, cva, cit, dcd, intent = c("SPK",
-  "PAK", "Other"), units = "SI")
+pdri(
+  age,
+  sex,
+  creat,
+  eth,
+  bmi,
+  height,
+  cva,
+  cit,
+  dcd,
+  intent = c("SPK", "PAK", "Other"),
+  units = "SI"
+)
 }
 \arguments{
 \item{age}{numeric vector of ages in years}

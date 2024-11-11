@@ -4,7 +4,8 @@
 \name{liver.pts}
 \alias{liver.pts}
 \title{Simulated dataset to illustrate MELD calculator vignette.}
-\format{A data frame with 4 rows and 6 variables:
+\format{
+A data frame with 4 rows and 6 variables:
 \describe{
   \item{Patient.Age}{patient age in years}
   \item{Patient.INR}{Patient INR}
@@ -13,7 +14,8 @@
   \item{Patient.Sodium}{Patient serum sodium in mmol/l}
   \item{Patient.Dialysed}{Whether patient dialysed (1 = yes, 0 = no)}
   ...
-}}
+}
+}
 \usage{
 liver.pts
 }

@@ -4,7 +4,8 @@
 \name{serial.results}
 \alias{serial.results}
 \title{Simulated dataset to illustrate serial results eGFR calculator vignette.}
-\format{A data frame with 4 rows and 6 variables:
+\format{
+A data frame with 4 rows and 6 variables:
 \describe{
   \item{Age}{patient age in years}
   \item{Sex}{Patient sex, M or F}
@@ -13,7 +14,8 @@
   \item{Creatinine_5yr}{serum creatinine at 5 years, in µmol/l}
 
   ...
-}}
+}
+}
 \usage{
 serial.results
 }

@@ -4,7 +4,8 @@
 \name{results}
 \alias{results}
 \title{Simulated dataset to illustrate eGFR calculator vignette.}
-\format{A data frame with 4 rows and 6 variables:
+\format{
+A data frame with 4 rows and 6 variables:
 \describe{
   \item{Creatinine}{serum creatinine in µmol/l}
   \item{Age}{patient age in years}
@@ -13,7 +14,8 @@
   \item{Weight}{Patient weight in kg}
   \item{Height}{Patient height in cm}
   ...
-}}
+}
+}
 \usage{
 results
 }

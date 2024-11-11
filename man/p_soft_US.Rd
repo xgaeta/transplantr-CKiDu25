@@ -4,8 +4,21 @@
 \alias{p_soft_US}
 \title{P-SOFT Score (US units)}
 \usage{
-p_soft_US(Age, BMI, PrevTx, AbdoSurg, Albumin, Dx, ICU, Admitted, MELD,
-  LifeSupport, Encephalopathy, PVThrombosis, Ascites)
+p_soft_US(
+  Age,
+  BMI,
+  PrevTx,
+  AbdoSurg,
+  Albumin,
+  Dx,
+  ICU,
+  Admitted,
+  MELD,
+  LifeSupport,
+  Encephalopathy,
+  PVThrombosis,
+  Ascites
+)
 }
 \arguments{
 \item{Age}{numeric vector of patient ages in years}

@@ -4,8 +4,20 @@
 \alias{uskdri}
 \title{US Kidney Donor Risk Index}
 \usage{
-uskdri(age, height, weight, eth, htn, dm, cva, creat, hcv, dcd,
-  scaling = 1, units = "SI")
+uskdri(
+  age,
+  height,
+  weight,
+  eth,
+  htn,
+  dm,
+  cva,
+  creat,
+  hcv,
+  dcd,
+  scaling = 1,
+  units = "SI"
+)
 }
 \arguments{
 \item{age}{numeric vector of donor ages in years}

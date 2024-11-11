@@ -4,7 +4,8 @@
 \name{mismatches}
 \alias{mismatches}
 \title{Simulated dataset to illustrate mismatches for HLA vignette.}
-\format{A data frame with 4 rows and 5 variables:
+\format{
+A data frame with 4 rows and 5 variables:
 \describe{
   \item{HLA.A.MM}{HLA A mismatch}
   \item{HLA.B.MM}{HLA B mismatch}
@@ -12,7 +13,8 @@
   \item{HLA.MM}{HLA mismatch as string}
   \item{HLA.MM.s}{HLA mismatch as string with separators}
   ...
-}}
+}
+}
 \usage{
 mismatches
 }

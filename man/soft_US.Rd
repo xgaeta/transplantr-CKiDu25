@@ -4,9 +4,27 @@
 \alias{soft_US}
 \title{SOFT score (Survival Outcomes Following Liver Transplantation) (US units)}
 \usage{
-soft_US(Age, BMI, PrevTx, AbdoSurg, Albumin, Dx, ICU, Admitted, MELD,
-  LifeSupport, Encephalopathy, PVThrombosis, Ascites, PortalBleed,
-  DonorAge, DonorCVA, DonorSCr, National, CIT)
+soft_US(
+  Age,
+  BMI,
+  PrevTx,
+  AbdoSurg,
+  Albumin,
+  Dx,
+  ICU,
+  Admitted,
+  MELD,
+  LifeSupport,
+  Encephalopathy,
+  PVThrombosis,
+  Ascites,
+  PortalBleed,
+  DonorAge,
+  DonorCVA,
+  DonorSCr,
+  National,
+  CIT
+)
 }
 \arguments{
 \item{Age}{numeric vector of patient ages in years}

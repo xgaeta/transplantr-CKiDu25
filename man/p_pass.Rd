@@ -4,8 +4,7 @@
 \alias{p_pass}
 \title{P-PASS pre-procurement pancreas suitability score}
 \usage{
-p_pass(age, bmi, icu, c.arr, Na, amylase = NULL, lipase = NULL, norad,
-  dopam)
+p_pass(age, bmi, icu, c.arr, Na, amylase = NULL, lipase = NULL, norad, dopam)
 }
 \arguments{
 \item{age}{numeric vector of donor ages in years}

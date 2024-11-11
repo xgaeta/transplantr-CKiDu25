@@ -4,8 +4,16 @@
 \alias{soft2}
 \title{SOFT score from P-SOFT}
 \usage{
-soft2(PSoft, PortalBleed, DonorAge, DonorCVA, DonorSCr, National, CIT,
-  Units = "SI")
+soft2(
+  PSoft,
+  PortalBleed,
+  DonorAge,
+  DonorCVA,
+  DonorSCr,
+  National,
+  CIT,
+  Units = "SI"
+)
 }
 \arguments{
 \item{PSoft}{numeric vector of P-SOFT scores}

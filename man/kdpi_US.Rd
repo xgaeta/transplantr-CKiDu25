@@ -4,8 +4,7 @@
 \alias{kdpi_US}
 \title{US KDPI (US units)}
 \usage{
-kdpi_US(age, height, weight, eth, htn, dm, cva, creat, hcv, dcd,
-  scaling = 1)
+kdpi_US(age, height, weight, eth, htn, dm, cva, creat, hcv, dcd, scaling = 1)
 }
 \arguments{
 \item{age}{numeric vector of donor ages in years}

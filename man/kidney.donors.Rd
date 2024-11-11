@@ -4,7 +4,8 @@
 \name{kidney.donors}
 \alias{kidney.donors}
 \title{Simulated dataset of donors to illustrate KDRI vignette.}
-\format{A data frame with 4 rows and 7 variables:
+\format{
+A data frame with 4 rows and 7 variables:
 \describe{
   \item{Donor.Age}{donor age in years}
   \item{Donor.Height}{donor height in cm}
@@ -14,7 +15,8 @@
   \item{Donor.GFR}{donor GFR}
   \item{Donor.Hospital_Stay}{donor hospital stay in days}
   ...
-}}
+}
+}
 \usage{
 kidney.donors
 }

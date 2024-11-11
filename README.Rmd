@@ -1,5 +1,5 @@
 ---
-title: "transplantr"
+title: "transplantr CKiD"
 output: github_document
 ---
 
@@ -38,7 +38,7 @@ library(transplantr)
 
 ## Development version
 
-These new equations follow the same style as the rest of the package, including sex as a binary variable. Height is provided in cm. They currently use US based equations. Outputs are in mL/min/1.73m^2^.
+These new equations follow the same style as the rest of the package, including sex as a binary variable. Height is provided in cm. They currently use US based equations. Outputs are in mL/min/1.73m^2^.t
 
 ```{r echo=TRUE}
 CKiD_U25_cystatin_US(cystatin = 1.2, age = 9.5, sex = "F")
@@ -52,13 +52,13 @@ CKiD_U25_combined_US(cystatin = 1.2, creat = 0.8, age = 9.5, sex = "F", height =
 
 ## Remainder of the base *transplantr* Readme is included below:
 
----
+------------------------------------------------------------------------
 
 # Tips on using *transplantr*
 
 As vectorised functions, the functions can be applied across a whole dataset fairly rapidly. I find that the easiest way to do this is using a "pipe" of functions from the *dplyr* package. *dplyr* can be installed on its own or, as I would recommend, by installing the whole *tidyverse* family of packages - a family which includes the legendary *ggplot2* graphing package.
 
-```{r}
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 # install whole tidyverse
 install.packages("tidyverse")
 
