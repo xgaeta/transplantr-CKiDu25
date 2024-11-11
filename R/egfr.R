@@ -380,13 +380,13 @@ CKiD_U25_combined_US = function(cystatin, creat, age, sex, height,
   eGFRU25.cr <- CKiD_U25_creatinine_US(creat = creat, age = age,
                                     height = height, sex = sex)
   eGFRU25.cys <-  CKiD_U25_cystatin_US(cystatin = cystatin, age = age, sex = sex)
-  sGFRU25.avg <- (eGFRU25.cys + eGFRU25.cr) / 2
+  eGFRU25.avg <- (eGFRU25.cys + eGFRU25.cr) / 2
 
   ## Determine if we should return all the component parts or just the result
   ## of the combined calculation
   if(verbose) {
-    return(round(cbind(eGFRU25.cr, eGFRU25.cys, sGFRU25.avg),1))
+    return(round(cbind(eGFRU25.cr, eGFRU25.cys, eGFRU25.avg),1))
   } else {
-    return(round(sGFRU25.avg, 1))
+    return(round(eGFRU25.avg, 1))
   }
 }

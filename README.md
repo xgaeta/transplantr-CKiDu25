@@ -8,22 +8,33 @@ series of data, where manual calculations would be particularly tedious.
 
 The functions provided fall into three groups:
 
-  - Donor and recipient risk indices
-  - HLA mismatch level calculators
-  - Estimated GFR calculators
-  - Biochemical unit converters
+- Donor and recipient risk indices
+- HLA mismatch level calculators
+- Estimated GFR calculators
+- Biochemical unit converters
 
 Although the package was built with unit tests, inaccuracies cannot be
 completely excluded. it is not a medical device and should not be used
 for making clinical decisions.
 
+You are viewing a fork of the [main CRAN transplantr
+package](https://cran.r-project.org/web/packages/transplantr/index.html "CRAN repository for transplantr package")
+updated to include functions for calculating pediatric eGFR based on the
+following publication:
+
+Pierce CB, Muñoz A, Ng DK, Warady BA, Furth SL, Schwartz GJ. **Age- and
+sex-dependent clinical equations to estimate glomerular filtration rates
+in children and young adults with chronic kidney disease.** *Kidney
+International*. 2021;99(4):948–956.
+[doi:10.1016/j.kint.2020.10.047](https://doi.org/10.1016/j.kint.2020.10.047 "Persistent DOI link for Pierce et al. paper")
+
 # Installation
 
-transplantr can be installed from CRAN:
+This version of transplantr can be installed from github:
 
 ``` r
 # install transplantr
-install.packages("transplantr")
+devtools::install_github("xgaeta/transplantr-CKiDu25")
 
 # load transplantr once installed
 library(transplantr)
@@ -31,17 +42,26 @@ library(transplantr)
 
 ## Development version
 
-The development version can be installed from GitHub, if you want all
-the latest features, together with all the latest bugs and errors.
-Installing from CRAN is the best option for most users as the submitted
-packages have to pass some very pedantic automated tests before they can
-be hosted on CRAN. If you do want the *caveat emptor*, you have been
-warned version, this is how:
+These new equations follow the same style as the rest of the package,
+including sex as a binary variable with 0 for female and 1 for male.
+Height is provided in cm. They currently use US based equations. Outputs
+are in mL/min/1.73m<sup>2</sup>.
 
 ``` r
-# install from GitHub
-devtools::install_packages("johnasher/transplantr")
+CKiD_U25_cystatin_US(cystatin = 1.2, age = 9.5, sex = "F")
+CKiD_U25_creatinine_US(creat = 0.8, age = 9.5, sex = "F", height = 132)
+CKiD_U25_combined_US(cystatin = 1.2, creat = 0.8, age = 9.5, sex = "F",                      height = 132, verbose = TRUE)
 ```
+
+[Pull requests have been
+filed](https://github.com/johnasher/transplantr/pull/5 "Current status of CKiD U25 pull request")
+to merge these equations into the main
+[transplantr](https://github.com/johnasher/transplantr/ "Github repository for original transplantr package, currently v0.2.0")
+package
+
+## Remainder of the base *transplantr* Readme is included below:
+
+------------------------------------------------------------------------
 
 # Tips on using *transplantr*
 
@@ -64,7 +84,7 @@ Although recommended, *dplyr* is not necessary for most *transplantr*
 functions to work. *dplyr* is needed for the EPTS and KDPI functions,
 and additionally *stringr* is needed for the `hla_mm_level_str()`
 function and also for the `chi2dob()` function, one unlikely to be
-needed by anyone working outside Scotland\!
+needed by anyone working outside Scotland!
 
 ## Biochemical units
 
@@ -88,7 +108,7 @@ another function, there is a slight increase in computational overhead.
 
 Let’s say you want to calculate MELD scores for a series of liver
 transplant candidates. OK, you probably actually want MELD-Na, but let’s
-go with MELD as it has fewer variables\! The data is in a dataframe or
+go with MELD as it has fewer variables! The data is in a dataframe or
 tibble called “oltx.assessments” and the relevant variables are
 Patient.INR, Patient.Bilirubin, Patient.Creatinine and Patient.Dialysed.
 To add a new Patient.MELD variable to the dataframe, you would use a
