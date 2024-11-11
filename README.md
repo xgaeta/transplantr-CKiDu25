@@ -47,7 +47,7 @@ library(transplantr)
 These new equations follow the same style as the rest of the package,
 including sex as a binary variable. Height is provided in cm. They
 currently use US based equations. Outputs are in
-mL/min/1.73m<sup>2</sup>.t
+mL/min/1.73m<sup>2</sup>.
 
 ``` r
 CKiD_U25_cystatin_US(cystatin = 1.2, age = 9.5, sex = "F")
